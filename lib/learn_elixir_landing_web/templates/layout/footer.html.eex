@@ -1,0 +1,16 @@
+<footer class='flex justify-between items-center ph3 pv4 f-avenirl purple'>
+  <div>
+    <span>&copy; Learn Elixir 2020</span>
+  </div>
+
+  <nav role='navigation'>
+    <ul class='flex f3'>
+      <li><%= link "View Course", to: "https://course.learn-elixir.dev/courses/elixir-mastery" %></li>
+      <li class='ml4'><%= link "Methodology", to: "/methodology" %></li>
+      <li class='ml4'><%= link "Dev Blog", to: "/blog" %></li>
+      <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
+        <li class='ml4'><%= link "Live Dashboard", to: Routes.live_dashboard_path(@conn, :home) %></li>
+      <% end %>
+    </ul>
+  </nav>
+</footer>

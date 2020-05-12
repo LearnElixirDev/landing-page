@@ -1,0 +1,16 @@
+<header class='flex justify-between items-center pl3 pr4 mt2 pb2 purple'>
+  <div class='w5'>
+    <%= link to: "/" do %>
+      <%= render LearnElixirLandingWeb.LayoutView, "logo.html", conn: @conn %>
+    <% end %>
+  </div>
+
+  <nav role='navigation'>
+    <ul class='flex f-avenirl pt3 f3'>
+      <li><%= link "View Course", to: "https://course.learn-elixir.dev/courses/elixir-mastery" %></li>
+      <li class='ml4'><%= link "Methodology", to: "/methodology" %></li>
+      <li class='ml4'><%= link "Dev Blog", to: "/blog" %></li>
+    </ul>
+  </nav>
+</header>
+

@@ -1,0 +1,15 @@
+<meta property='og:type' content='profile'/>
+<meta property='og:title' content='Example title'></meta>
+<meta property='og:url' content='https://exmaple.com'></meta>
+<meta property='og:site_name' content='Example'></meta>
+<meta property='og:image' content='https://example.com/assets/img/personal_image.jpg'></meta>
+<meta property='og:description' content='Example'></meta>
+
+<meta name='description' content='Example'></meta>
+<meta name='keywords' content='exmaple'></meta>
+<meta name='author' content='Example'></meta>
+<meta name='copyright' content='Example'/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<link rel='canonical' href='https://example.ca'/>
+<meta name='robots' content='index,follow'/>

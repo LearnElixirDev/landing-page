@@ -1,0 +1,5 @@
+$vert-size: 3.75rem; // 60px * 16
+
+@mixin page-size-settings {
+  min-height: calc(100vh - #{$header-height});
+}

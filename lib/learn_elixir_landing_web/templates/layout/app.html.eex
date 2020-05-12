@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Learn Elixir</title>
+
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <%= render LearnElixirLandingWeb.LayoutView, "meta_tags.html", conn: @conn %>
+    <%= render LearnElixirLandingWeb.LayoutView, "fav_icon_meta.html", conn: @conn %>
+
+    <link href='https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap&text=TSLUWvakeurvythodlgwnippcp' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Domine&display=swap&text=Wehelpdevelopersearnsix-figureincomesprogrammingElixirviamentorship,exclusivecontent,andindustryconnections' rel='stylesheet'>
+
+    <link rel='stylesheet' href='<%= Routes.static_path(@conn, "/css/app.css") %>'/>
+  </head>
+  <body class='flex flex-column'>
+    <%= render LearnElixirLandingWeb.LayoutView, "header.html", conn: @conn %>
+
+    <main role='main' class='flex-item--fill-max'>
+      <p class='alert alert-info' role='alert'><%= get_flash(@conn, :info) %></p>
+      <p class='alert alert-danger' role='alert'><%= get_flash(@conn, :error) %></p>
+      <%= @inner_content %>
+    </main>
+
+    <%= render LearnElixirLandingWeb.LayoutView, "footer.html", conn: @conn %>
+
+    <script defer type='text/javascript' src='<%= Routes.static_path(@conn, "/js/app.js") %>'></script>
+  </body>
+</html>

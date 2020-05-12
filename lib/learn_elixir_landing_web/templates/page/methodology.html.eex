@@ -1,0 +1,180 @@
+<section>
+  <h2>Methodology</h2>
+  <p>We help developers earn six-figure incomes programming Elixir via</p>
+  <p>mentorship, exclusive content, and industry connections</p>
+
+  <button>View Course</button>
+</section>
+
+<section>
+  <h2>Underpaid, Overworked, Oversaturated</h2>
+
+  <div>
+    <p>
+      How did you first learn to program? Were you self taught or did you go through a bootcamp? By your best estimates, how many others join the workforce each year either by their own volition or from bootcamps knowing the same languages you program with?
+    </p>
+
+    <p>
+      There's a folder of unread resumes in every hiring manager’s inbox all waiting for the same reply. Therefore salaries are low, overtime is expected, working conditions are unbearable, and you've reached your limit. On top of that, someone somewhere who's been unemployed for the last few months would be happy to tolerate the circumstances. and the cycle repeats
+    </p>
+
+    <div>
+      <span>Image</span>
+    </div>
+
+    <p>
+      What would increase your standard of living? Want to work from home? Travel and work? A raise? The power of choice is in the hands of the specialist.
+    </p>
+
+    <p>
+      If you are one of only a handful of people who are qualified and available to solve a company's unique and interesting problem in a timely manner, you gain the flexibility to make reasonable demands!
+    </p>
+
+    <div>
+      <span>Image</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>How to Learn a New Programing Language FAST</h2>
+  <h3>Mastery comes from knowledge, wisdom, and experience through the 4 levels of learning</h3>
+
+  <div class='flex justify-between items-center'>
+    <div class='flex flex-column justify-center flex-item--same-width'>
+      <div>
+        <span>Image</span>
+      </div>
+
+      <h4 class='bold'>Unconscious Incompetence</h3>
+      <p>You don’t know what you don’t know</p>
+    </div>
+
+
+    <div class='flex flex-column justify-center flex-item--same-width'>
+      <div>
+        <span>Image</span>
+      </div>
+
+      <h4 class='bold'>Conscious Incompetence</h3>
+      <p>You know what you don’t know. You can see your shortcomings and understand where you need to improveYou don’t know what you don’t know</p>
+    </div>
+
+    <div class='flex flex-column justify-center flex-item--same-width'>
+      <div>
+        <span>Image</span>
+      </div>
+
+      <h4 class='bold'>Conscious Competence</h3>
+      <p>You know what you know. You are starting to get the hang of things but it still takes  effort and concentration</p>
+    </div>
+
+    <div class='flex flex-column justify-center flex-item--same-width'>
+      <div>
+        <span>Image</span>
+      </div>
+
+      <h4 class='bold'>Unconscious Competence</h3>
+      <p>You don’t know what you know  You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot and don’t understand why others can’t perform on your level</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h2>Knowledge</h2>
+    <span>Theory, information, and facts are the cognitive resources or building blocks towards the practical understanding of a subject</span>
+  </div>
+
+  <div class='flex flex-column'>
+    <div class='mr-auto'>
+      <h3>Consolidated Resources</h3>
+      <p>See the big picture from day one rather than searching each topic one by one and piecing it together over the years</p>
+    </div>
+
+    <div class='ml-auto'>
+      <h3>100%</h3>
+      <p>Course material covers all the fundamental paradigms and philosophies you need to be a talented Elixir developer</p>
+    </div>
+
+    <div class='mr-auto'>
+      <h3>Self Paced</h3>
+      <p>Watch videos or read the transcripts as quickly or slowly as your schedule allows. Strategically compound your capabilities with each week of content building off the last</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h2>Wisdom</h2>
+    <span>Only take advice from people who have the knowledge you want and you’ll learn sooner than you’d expect</span>
+  </div>
+
+  <div class='flex flex-column'>
+    <div class='mr-auto'>
+      <h3>Live Programming</h3>
+      <p>Join our weekly Q&A calls to deep dive into complex concepts and see how experienced Elixir developers would understand or solve your particular situation</p>
+    </div>
+
+    <div class='ml-auto'>
+      <h3>Industry Experience</h3>
+      <p>Soft skills, hard skills, where to look? who to talk to? what to ask for? </p>
+      <p class='bold'>Learn how to stand out as the obvious candidate while raising your standard of living</p>
+    </div>
+
+    <div class='mr-auto'>
+      <h3>Quick Clarification</h3>
+      <p>Message mentors on Facebook or Slack if you’re stuck at a module or facing the unknown at work</p>
+    </div>
+
+    <div class='ml-auto'>
+      <h3>Speed Run</h3>
+      <p>Save years of trial and error and prevent the pitfalls of bad programming habits that plague self-taught junior Elixir developers</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h2>Experience</h2>
+    <span>Push past previous plateaus - combine the knowledge you’ve acquired and the wisdom you’ve gleaned to form your unique perspective and engrave it into the industry</span>
+  </div>
+
+  <div class='flex flex-column'>
+    <div class='mr-auto'>
+      <h3>Practical Application</h3>
+      <p>Test your comprehension with quizzes and projects each step of the way to validate your growth as a developer</p>
+    </div>
+
+    <div class='ml-auto'>
+      <h3>Proof of Work</h3>
+      <p>Add mid-term and final projects as examples of your excellent code to GitHub for hiring managers to admire</p>
+    </div>
+
+    <div class='mr-auto'>
+      <h3>Learn Elixir Fam</h3>
+      <p>Recommendations, referrals, and introductions. Have an interview with our Hiring Partners before the opportunity hits the job boards</p>
+    </div>
+
+    <div class='ml-auto'>
+      <h3>Sandbox</h3>
+      <p>Startups, scale enterprises, improve the blockchain, teach an AI, popularize LiveView, become a mentor, travel and work remotely for your favorite eSports company You choose your own adventure! </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Mastery is a Marathon</h2>
+  <p>To be truly great is a lifelong process. It’s possible to pioneer your path and brute force your competency over time, but a bullet train has been built if you want to smoothly speed ahead of the competition.</p>
+</section>
+
+<section>
+  <h2>We only want to work with people we know we can help</h2>
+  <p>Book a call now with Jeremy Graham to see if we’re a good fit for each other.</p>
+  <p>Once we get to know you and know we can help you get to your goal, pricing options will be presented to you and we can discuss the best steps moving forward.</p>
+
+  <div>
+    <button>Book Call</button>
+  </div>
+</section>
+

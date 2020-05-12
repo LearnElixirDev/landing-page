@@ -1,0 +1,16 @@
+.button {
+  font-size: 1.625rem;
+  background-color: $white;
+  color: $purple;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: avenir-medium, avenir, sans-serif;
+
+  padding: {
+    left: 2.75rem;
+    right: 2.75rem;
+    top: 1rem;
+    bottom: 1rem;
+  }
+}

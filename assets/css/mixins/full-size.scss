@@ -1,0 +1,9 @@
+@mixin full-size {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin min-full-size {
+  min-height: 100%;
+  min-width: 100%;
+}

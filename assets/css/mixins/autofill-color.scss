@@ -1,0 +1,23 @@
+$frame-count: 0;
+
+@mixin autofill-color($background, $foreground:'') {
+  @keyframes autofill-color-#{$frame-count} {
+    to {
+      background: $background;
+      @if $foreground != '' { color: $foreground; }
+    }
+  }
+
+  &:-webkit-autofill {
+    animation-name: autofill-color-#{$frame-count};
+    animation-fill-mode: both;
+  }
+
+  &.autofill-monitored:-webkit-autofill {
+    animation-name: autofill-start,
+                    autofill-color-#{$frame-count};
+  }
+
+  $frame-count: $frame-count + 1 !global;
+}
+
