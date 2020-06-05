@@ -1,10 +1,7 @@
 defmodule LearnElixirLandingWeb.BlogController do
   use LearnElixirLandingWeb, :controller
 
-
-  @blog_list Enum.flat_map(["dangers_of_genservers"], &[
-    &1, String.replace(&1, "_", "-")
-  ])
+  @blog_list LearnElixirLandingWeb.MarkdownViewHelper.blog_names()
 
   def index(conn, _params) do
     render(conn, "index.html")
@@ -17,7 +14,7 @@ defmodule LearnElixirLandingWeb.BlogController do
   def show(conn, %{"id" => blog_name}) do
     blog_name = String.replace(blog_name, "_", "-")
 
-    render(conn, "show.html", blog_name: "#{blog_name}.md")
+    render(conn, "show.html", blog_name: blog_name)
   end
 end
 
