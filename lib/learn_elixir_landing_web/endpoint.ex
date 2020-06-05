@@ -20,10 +20,19 @@ defmodule LearnElixirLandingWeb.Endpoint do
   #
   # You should set gzip to true if you are running phx.digest
   # when deploying your static files in production.
-  plug Plug.Static,
-    at: "/",
-    from: :learn_elixir_landing,
-    gzip: false
+  if Mix.env() === :prod do
+    plug Plug.Static,
+      at: "/",
+      from: :learn_elixir_landing,
+      gzip: true,
+      only: ~w(css static js vendor)
+  else
+    plug Plug.Static,
+      at: "/",
+      from: :learn_elixir_landing,
+      gzip: false,
+      only: ~w(css static js vendor)
+  end
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.

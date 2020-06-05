@@ -23,3 +23,28 @@
     outline: 0;
   }
 }
+
+.button-small {
+  background-color: $white;
+  color: $purple;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: avenir-light, avenir, sans-serif;
+  transition: background-color .2s ease-in-out;
+
+  padding: {
+    left: 1.75rem;
+    right: 1.75rem;
+    top: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  &:hover {
+    background-color: darken($white, 9);
+  }
+
+  &:active, &:focus {
+    outline: 0;
+  }
+}
