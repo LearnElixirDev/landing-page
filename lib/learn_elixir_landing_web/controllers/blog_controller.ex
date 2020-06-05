@@ -5,8 +5,8 @@ defmodule LearnElixirLandingWeb.BlogController do
     render(conn, "index.html")
   end
 
-  def show(conn, _params) do
-    render(conn, "show.html")
+  def dangers_of_genservers(conn, _params) do
+    render(conn, "dangers_of_genservers.html")
   end
 end
 

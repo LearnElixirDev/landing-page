@@ -1,5 +1,11 @@
 html {
-  font-size: 14px;
+  @include breakpoint($lt-lg) {
+    font-size: 14px;
+  }
+
+  @include breakpoint($gt-lg) {
+    font-size: 18px;
+  }
 }
 
 h1, h2,
@@ -22,4 +28,8 @@ h3 {
 
 h4, p {
   font-size: 1.3125rem;
+
+  @include breakpoint($gt-md) {
+    font-size: 1.5rem;
+  }
 }

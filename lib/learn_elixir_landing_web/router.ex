@@ -19,7 +19,8 @@ defmodule LearnElixirLandingWeb.Router do
     get "/", PageController, :index
     get "/methodology", PageController, :methodology
 
-    resources "/blog", BlogController, only: [:index, :show]
+    resources "/blogs", BlogController, only: [:index]
+    get "/blogs/dangers-of-genservers", BlogController, :dangers_of_genservers
   end
 
   # Other scopes may use custom stacks.

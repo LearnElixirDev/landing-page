@@ -1,15 +1,17 @@
-<section>
+<section class='ph3 methodology background-gradient--reverse white center flex flex-column items-center justify-center vh-70'>
   <h2>Methodology</h2>
-  <p>We help developers earn six-figure incomes programming Elixir via</p>
-  <p>mentorship, exclusive content, and industry connections</p>
+  <p class='mt4 f-avenirm lh-copy mxw-xl'>We help developers earn six-figure incomes programming Elixir via</p>
+  <p class='f-avenirm lh-copy mxw-xl'>mentorship, exclusive content, and industry connections</p>
 
-  <button>View Course</button>
+  <div class='mt5'>
+    <button class='button'>View Course</button>
+  </div>
 </section>
 
-<section>
-  <h2>Underpaid, Overworked, Oversaturated</h2>
+<section class='purple ph3 mv5 pv5 f-avenirm underpaid'>
+  <h2 class='tc'>Underpaid, Overworked, Oversaturated</h2>
 
-  <div>
+  <div class='flex flex-column justify-center items-center mt5 lh-copy'>
     <p>
       How did you first learn to program? Were you self taught or did you go through a bootcamp? By your best estimates, how many others join the workforce each year either by their own volition or from bootcamps knowing the same languages you program with?
     </p>
@@ -18,8 +20,8 @@
       There's a folder of unread resumes in every hiring manager’s inbox all waiting for the same reply. Therefore salaries are low, overtime is expected, working conditions are unbearable, and you've reached your limit. On top of that, someone somewhere who's been unemployed for the last few months would be happy to tolerate the circumstances. and the cycle repeats
     </p>
 
-    <div>
-      <span>Image</span>
+    <div class='w-80 relative seesaw_1'>
+      <%= render LearnElixirLandingWeb.IconView, "seesaw_1.html", conn: @conn %>
     </div>
 
     <p>
@@ -30,151 +32,228 @@
       If you are one of only a handful of people who are qualified and available to solve a company's unique and interesting problem in a timely manner, you gain the flexibility to make reasonable demands!
     </p>
 
-    <div>
-      <span>Image</span>
+    <div class='w-80 relative seesaw_2' height='300'>
+      <%= render LearnElixirLandingWeb.IconView, "seesaw_2.html", conn: @conn %>
     </div>
   </div>
 </section>
 
-<section>
+<section class='ph3 pv5 white background-gradient flex flex-column justify-center items-center f-avenirm lh-copy'>
   <h2>How to Learn a New Programing Language FAST</h2>
-  <h3>Mastery comes from knowledge, wisdom, and experience through the 4 levels of learning</h3>
+  <h3 class='mt2 fw1'>Mastery comes from knowledge, wisdom, and experience through the 4 levels of learning</h3>
 
-  <div class='flex justify-between items-center'>
-    <div class='flex flex-column justify-center flex-item--same-width'>
-      <div>
-        <span>Image</span>
+  <div class='mt5 flex justify-between items-end'>
+    <div class='flex flex-column items-center justify-center flex-item--same-width'>
+      <div class='methodology-ape'>
+        <%= render LearnElixirLandingWeb.IconView, "ape.html", conn: @conn %>
       </div>
 
-      <h4 class='bold'>Unconscious Incompetence</h3>
-      <p>You don’t know what you don’t know</p>
+      <h4 class='bold mt3 f-avenirb'>Unconscious Incompetence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1'>You don’t know what you don’t know</p>
     </div>
 
-
-    <div class='flex flex-column justify-center flex-item--same-width'>
-      <div>
-        <span>Image</span>
+    <div class='flex flex-column items-center justify-center flex-item--same-width'>
+      <div class='methodology-semi-human'>
+        <%= render LearnElixirLandingWeb.IconView, "semi_human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold'>Conscious Incompetence</h3>
-      <p>You know what you don’t know. You can see your shortcomings and understand where you need to improveYou don’t know what you don’t know</p>
+      <h4 class='bold mt3 f-avenirb'>Conscious Incompetence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1'>You know what you don’t know. You can see your shortcomings and understand where you need to improve</p>
     </div>
 
-    <div class='flex flex-column justify-center flex-item--same-width'>
-      <div>
-        <span>Image</span>
+    <div class='flex flex-column items-center justify-center flex-item--same-width'>
+      <div class='methodology-human'>
+        <%= render LearnElixirLandingWeb.IconView, "human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold'>Conscious Competence</h3>
-      <p>You know what you know. You are starting to get the hang of things but it still takes  effort and concentration</p>
+      <h4 class='bold mt3 f-avenirb'>Conscious Competence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1'>You know what you know. You are starting to get the hang of things but it still takes  effort and concentration</p>
     </div>
 
-    <div class='flex flex-column justify-center flex-item--same-width'>
-      <div>
-        <span>Image</span>
+    <div class='flex flex-column items-center justify-center flex-item--same-width'>
+      <div class='methodology-computer-human'>
+        <%= render LearnElixirLandingWeb.IconView, "computer_human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold'>Unconscious Competence</h3>
-      <p>You don’t know what you know  You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot and don’t understand why others can’t perform on your level</p>
+      <h4 class='bold mt3 f-avenirb'>Unconscious Competence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1'>You don’t know what you know  You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot and don’t understand why others can’t perform on your level</p>
     </div>
   </div>
 </section>
 
-<section>
+<section class='mt5 pt5 purple f-avenirm lh-copy'>
+  <div class='tc'>
+    <h2 class='f-avenirb'>Knowledge</h2>
+    <p class='db center mt4'>
+      <span class='db'>Theory, information, and facts are the cognitive resources or</span>
+      <span class='db'>building blocks towards the practical understanding of a subject</span>
+    </p>
+  </div>
+
+  <div class='w-80 center flex flex-column relative methodology-knowldedge-gain'>
+    <div class='absolute absolute--fill flex justify-center'>
+      <%= render LearnElixirLandingWeb.IconView, "knowledge_gain.html", conn: @conn %>
+    </div>
+
+    <div class='mr-auto methodology-consolidated-resources'>
+      <h3 class='f-avenirb'>Consolidated Resources</h3>
+      <p class='mt3'>
+        <span class='db'>See the big picture from day one rather</span>
+        <span class='db'>than searching each topic one by one</span>
+        <span class='db'>and piecing it together over the years</span>
+      </p>
+    </div>
+
+    <div class='ml-auto'>
+      <h3 class='f-avenirb methodology-one-hundred-percent'>100%</h3>
+      <p class='mt3'>
+        <span class='db'>Course material covers all the</span>
+        <span class='db'>fundamental paradigms and</span>
+        <span class='db'>philosophies you need to be</span>
+        <span class='db'>a talented Elixir developer</span>
+      </p>
+    </div>
+
+    <div class='mr-auto methodology-self-paced'>
+      <h3 class='f-avenirb'>Self Paced</h3>
+      <p class='mt3'>
+        <span class='db'>Watch videos or read the transcripts</span>
+        <span class='db'>as quickly or slowly as your schedule</span>
+        <span class='db'>allows. Strategically compound your</span>
+        <span class='db'>capabilities with each week of content</span>
+        <span class='db'>building off the last</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class='mt5 pt5 purple f-avenirm lh-copy'>
+  <div class='tc'>
+    <h2 class='f-avenirb'>Wisdom</h2>
+    <p class='center mt4'>
+      <span class='db'>Only take advice from people who have the knowledge you want</span>
+      <span class='db'>and you’ll learn sooner than you’d expect</span>
+    </p>
+  </div>
+
+  <div class='w-80 center flex flex-column relative methodology-wisdom-gain'>
+    <div class='absolute absolute--fill flex justify-center'>
+      <%= render LearnElixirLandingWeb.IconView, "wisdom_gain.html", conn: @conn %>
+    </div>
+
+    <div class='mr-auto methodology-live-programming'>
+      <h3 class='f-avenirb'>Live Programming</h3>
+
+      <p class='mt3'>
+        <span class='db'>Join our weekly Q&A calls to deep</span>
+        <span class='db'>dive into complex concepts and see</span>
+        <span class='db'>how experienced Elixir developers</span>
+        <span class='db'>would understand or solve your</span>
+        <span class='db'>particular situation</span>
+      </p>
+    </div>
+
+    <div class='ml-auto methodology-industry-experience'>
+      <h3 class='f-avenirb'>Industry Experience</h3>
+      <p class='mt3'>
+        <span class='db'>Soft skills, hard skills, where to look? who to talk</span>
+        <span class='db'>to? what to ask for?</span>
+        <span class='db'>Learn how to stand out as the obvious</span>
+        <span class='db'>candidate while raising your standard of living</span>
+      </p>
+    </div>
+
+    <div class='mr-auto methodology-quick-clarification'>
+      <h3 class='f-avenirb'>Quick Clarification</h3>
+      <p class='mt3'>
+        <span class='db'>Message mentors on Facebook or</span>
+        <span class='db'>Slack if you’re stuck at a module or</span>
+        <span class='db'>facing the unknown at work</span>
+      </p>
+    </div>
+
+    <div class='ml-auto methodology-speed-run'>
+      <h3 class='f-avenirb'>Speed Run</h3>
+      <p class='mt3'>
+        <span class='db'>Save years of trial and error and prevent the</span>
+        <span class='db'>pitfalls of bad programming habits that plague</span>
+        <span class='db'>self-taught junior Elixir developers</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class='mt5 pt5 purple f-avenirm lh-copy'>
   <div>
-    <h2>Knowledge</h2>
-    <span>Theory, information, and facts are the cognitive resources or building blocks towards the practical understanding of a subject</span>
+    <h2 class='f-avenirb tc'>Experience</h2>
+    <p class='center mt4'>
+      <span class='db'>Push past previous plateaus - combine the knowledge you’ve acquired</span>
+      <span class='db'>and the wisdom you’ve gleaned to form your unique perspective and</span>
+      <span class='db'>engrave it into the industry</span>
+    </p>
   </div>
 
-  <div class='flex flex-column'>
-    <div class='mr-auto'>
-      <h3>Consolidated Resources</h3>
-      <p>See the big picture from day one rather than searching each topic one by one and piecing it together over the years</p>
+  <div class='w-80 center flex flex-column relative methodology-experience-gain'>
+    <div class='absolute absolute--fill flex justify-center'>
+      <%= render LearnElixirLandingWeb.IconView, "experience_gain.html", conn: @conn %>
     </div>
 
-    <div class='ml-auto'>
-      <h3>100%</h3>
-      <p>Course material covers all the fundamental paradigms and philosophies you need to be a talented Elixir developer</p>
+    <div class='mr-auto methodology-practical-application'>
+      <h3 class='f-avenirb'>Practical Application</h3>
+      <p>
+        <span class='db'>Test your comprehension with quizzes</span>
+        <span class='db'>and projects each step of the way to</span>
+        <span class='db'>validate your growth as a developer</span>
+      </p>
     </div>
 
-    <div class='mr-auto'>
-      <h3>Self Paced</h3>
-      <p>Watch videos or read the transcripts as quickly or slowly as your schedule allows. Strategically compound your capabilities with each week of content building off the last</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div>
-    <h2>Wisdom</h2>
-    <span>Only take advice from people who have the knowledge you want and you’ll learn sooner than you’d expect</span>
-  </div>
-
-  <div class='flex flex-column'>
-    <div class='mr-auto'>
-      <h3>Live Programming</h3>
-      <p>Join our weekly Q&A calls to deep dive into complex concepts and see how experienced Elixir developers would understand or solve your particular situation</p>
+    <div class='ml-auto methodology-proof-of-work'>
+      <h3 class='f-avenirb'>Proof of Work</h3>
+      <p>
+        <span class='db'>Add mid-term and final projects as</span>
+        <span class='db'>examples of your excellent code to GitHub</span>
+        <span class='db'>for hiring managers to admire</span>
+      </p>
     </div>
 
-    <div class='ml-auto'>
-      <h3>Industry Experience</h3>
-      <p>Soft skills, hard skills, where to look? who to talk to? what to ask for? </p>
-      <p class='bold'>Learn how to stand out as the obvious candidate while raising your standard of living</p>
+    <div class='mr-auto methodology-fam'>
+      <h3 class='f-avenirb'>Learn Elixir Fam</h3>
+      <p>
+        <span class='db'>Recommendations, referrals, and</span>
+        <span class='db'>introductions. Have an interview</span>
+        <span class='db'>with our Hiring Partners before the</span>
+        <span class='db'>opportunity hits the job boards</span>
+      </p>
     </div>
 
-    <div class='mr-auto'>
-      <h3>Quick Clarification</h3>
-      <p>Message mentors on Facebook or Slack if you’re stuck at a module or facing the unknown at work</p>
-    </div>
-
-    <div class='ml-auto'>
-      <h3>Speed Run</h3>
-      <p>Save years of trial and error and prevent the pitfalls of bad programming habits that plague self-taught junior Elixir developers</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div>
-    <h2>Experience</h2>
-    <span>Push past previous plateaus - combine the knowledge you’ve acquired and the wisdom you’ve gleaned to form your unique perspective and engrave it into the industry</span>
-  </div>
-
-  <div class='flex flex-column'>
-    <div class='mr-auto'>
-      <h3>Practical Application</h3>
-      <p>Test your comprehension with quizzes and projects each step of the way to validate your growth as a developer</p>
-    </div>
-
-    <div class='ml-auto'>
-      <h3>Proof of Work</h3>
-      <p>Add mid-term and final projects as examples of your excellent code to GitHub for hiring managers to admire</p>
-    </div>
-
-    <div class='mr-auto'>
-      <h3>Learn Elixir Fam</h3>
-      <p>Recommendations, referrals, and introductions. Have an interview with our Hiring Partners before the opportunity hits the job boards</p>
-    </div>
-
-    <div class='ml-auto'>
-      <h3>Sandbox</h3>
-      <p>Startups, scale enterprises, improve the blockchain, teach an AI, popularize LiveView, become a mentor, travel and work remotely for your favorite eSports company You choose your own adventure! </p>
+    <div class='ml-auto methodology-sandbox'>
+      <h3 class='f-avenirb'>Sandbox</h3>
+      <p>
+        <span class='db'>Startups, scale enterprises, improve the</span>
+        <span class='db'>blockchain, teach an AI, popularize</span>
+        <span class='db'>LiveView, become a mentor, travel and work</span>
+        <span class='db'>remotely for your favorite eSports company.</span>
+        <span class='db'>You choose your own adventure!</span>
+      </p>
     </div>
   </div>
 </section>
 
-<section>
-  <h2>Mastery is a Marathon</h2>
-  <p>To be truly great is a lifelong process. It’s possible to pioneer your path and brute force your competency over time, but a bullet train has been built if you want to smoothly speed ahead of the competition.</p>
+<section class='pv5 mv5 purple f-avenirm lh-copy'>
+  <h2 class='f-avenirb tc'>Mastery is a Marathon</h2>
+  <p class='db center mt3'>To be truly great is a lifelong process. It’s possible to pioneer your path and brute force your competency over time, but a bullet train has been built if you want to smoothly speed ahead of the competition.</p>
 </section>
 
-<section>
-  <h2>We only want to work with people we know we can help</h2>
-  <p>Book a call now with Jeremy Graham to see if we’re a good fit for each other.</p>
-  <p>Once we get to know you and know we can help you get to your goal, pricing options will be presented to you and we can discuss the best steps moving forward.</p>
+<section class='mt5 ph3 vh-75 flex flex-column justify-center items-center bg-light-purple white f-avenirm'>
+  <h2 class='lh-title'>We only want to work with people we know we can help</h2>
+  <p class='mt4 lh-copy'>Book a call now with Jeremy Graham to see if we’re a good fit for each other.</p>
+  <p class='mt2 lh-copy'>Once we get to know you and know we can help you get to your goal, pricing options will be presented to you and we can discuss the best steps moving forward.</p>
 
-  <div>
-    <button>Book Call</button>
+  <div class='mt5'>
+    <button class='button'>
+      <!-- Calendly link widget begin -->
+      <a href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">Book Call</a>
+      <!-- Calendly link widget end -->
+    </button>
   </div>
 </section>
-

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Learn Elixir</title>
+    <title><%= @view_module.title(@view_template, assigns) %></title>
 
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -26,5 +26,8 @@
     <%= render LearnElixirLandingWeb.LayoutView, "footer.html", conn: @conn %>
 
     <script defer type='text/javascript' src='<%= Routes.static_path(@conn, "/js/app.js") %>'></script>
+
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
   </body>
 </html>

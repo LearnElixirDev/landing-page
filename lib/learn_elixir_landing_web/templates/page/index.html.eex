@@ -1,5 +1,5 @@
-<section class='page-size-full flex flex-column justify-center items-center background-gradient'>
-  <div class='w-80'>
+<section class='page-size-full flex flex-column justify-center items-center background-gradient home-page-main'>
+  <div class='w-80 home-page-main--hero-container'>
     <div class='flex justify-between items-center'>
       <div>
         <h1 class='white fw-b f-domine'>Level Up</h1>
@@ -7,76 +7,87 @@
         <p class='mt2 f-hero white f-domine'>beginner, intermediate, & advanced, to</p>
         <p class='mt2 f-hero white f-domine'>Elixir Mastery.</p>
 
-        <%= link to: "https://course.learn-elixir.dev/courses/elixir-mastery", class: "db mt4" do %>
+        <a class='db mt4' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">
           <button class='button'>Start Course</button>
-        <% end %>
+        </a>
       </div>
 
-      <%= icon_tag(@conn, "homepage-icons", "computer-person-white", viewBox: "0 0 437 305", class: 'comp-pers-white') %>
+      <div class='comp-pers-white'>
+        <%= render LearnElixirLandingWeb.IconView, "computer_person_white.html", conn: @conn %>
+      </div>
     </div>
 
     <div class='flex justify-between mt5 white'>
-      <div class='pr4'>
+      <div class='pr4 mxw-l'>
         <h3 class='f-avenirb'>Exciting Projects</h3>
-        <p class='mt4 f-avenirm lh-copy'>Elixir is a dynamic, functional language designed for building scalable and maintainable applications like WhatsApp, Pinterest, and Discord.</p>
+
+        <p class='mt4 f-avenirm lh-copy'>
+          Elixir is a dynamic, functional language designed for building scalable and maintainable applications like WhatsApp, Pinterest, and Discord.
+        </p>
       </div>
 
-      <div class='ph4'>
+      <div class='ph4 mxw-l'>
         <h3 class='f-avenirb'>High Demand</h3>
-        <p class='mt4 f-avenirm lh-copy'>Stack Overflow’s 2019 survey placed Elixir as the 5th highest paid language globally and 8th most loved!</p>
+
+        <p class='mt4 f-avenirm lh-copy'>
+          Stack Overflow’s 2019 survey placed Elixir as the 5th highest paid language globally and 8th most loved!
+        </p>
       </div>
 
-      <div class='pl4'>
+      <div class='pl4 mxw-l'>
         <h3 class='f-avenirb'>Become Indispensable</h3>
-        <p class='mt4 f-avenirm lh-copy'>Be sought after or retained by companies by separating yourself from the generalists as a specialist.</p>
+
+        <p class='mt4 f-avenirm lh-copy'>
+          Be sought after or retained by companies by separating yourself from the generalists as a specialist.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section class='pv6 purple w-80 center lh-copy'>
+<section class='pv6 purple w-80 center lh-copy home-page-info'>
   <div class='flex justify-between items-center'>
     <div>
       <h4 class='f-avenirh'>Exclusive Curated Content</h4>
-      <p class='f-avenirm'>Everything you need to know to become a talented Elixir developer.</p>
+      <p class='f-avenirm mxw-m'>Everything you need to know to become a talented Elixir developer.</p>
     </div>
 
-    <div>
-      <%= icon_tag(@conn, "homepage-icons", "computer-image-1", viewBox: "0 0 607 340", class: 'comp-img-1') %>
+    <div class='comp-img-1 ml4'>
+      <%= render LearnElixirLandingWeb.IconView, "computer_image_1.html", conn: @conn %>
     </div>
   </div>
 
   <div class='flex justify-between items-center'>
-    <div>
-      <%= icon_tag(@conn, "homepage-icons", "computer-image-2", viewBox: "0 0 370 378", class: 'comp-img-2') %>
+    <div class='comp-img-2'>
+      <%= render LearnElixirLandingWeb.IconView, "computer_image_2.html", conn: @conn %>
     </div>
 
-    <div>
+    <div class='ml4'>
       <h4 class='f-avenirh'>Mentorship</h4>
-      <p class='f-avenirm'>Connect with experienced mentors to clarify content & aid in real-world problem solving.</p>
+      <p class='f-avenirm mxw-m'>Connect with experienced mentors to clarify content & aid in real-world problem solving.</p>
     </div>
   </div>
 
   <div class='flex justify-between items-center'>
     <div>
       <h4 class='f-avenirh'>Hiring Partners</h4>
-      <p class='f-avenirm'>Introductions, recommendations, & suggestions to stand out as the obvious choice.</p>
+      <p class='f-avenirm mxw-m'>Introductions, recommendations, & suggestions to stand out as the obvious choice.</p>
     </div>
 
-    <div>
-      <%= icon_tag(@conn, "homepage-icons", "computer-image-3", viewBox: "0 0 567 278", class: 'comp-img-3') %>
+    <div class='comp-img-3 ml4'>
+      <%= render LearnElixirLandingWeb.IconView, "computer_image_3.html", conn: @conn %>
     </div>
   </div>
 </section>
 
 <section class='vh-75 flex flex-column justify-center items-center bg-light-purple white'>
-  <h2 class='f-domine'>Take Survey</h2>
+  <h2 class='f-domine'>Book Call</h2>
 
   <p class='mt4 f-avenirm'>Apply now to see if you are prepared to learn Elixir</p>
 
   <div class='mt5'>
-    <%= link to: "https://course.learn-elixir.dev/courses/elixir-mastery", class: "db mt4" do %>
-      <button class='button'>Begin Survey</button>
-    <% end %>
+    <a class='db mt4' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">
+      <button class='button'>Book Call</button>
+    </a>
   </div>
 </section>

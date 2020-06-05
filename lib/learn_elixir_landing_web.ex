@@ -66,7 +66,6 @@ defmodule LearnElixirLandingWeb do
       import Phoenix.View
 
       import LearnElixirLandingWeb.ErrorHelpers
-      import LearnElixirLandingWeb.IconHelper
       import LearnElixirLandingWeb.Gettext
       alias LearnElixirLandingWeb.Router.Helpers, as: Routes
     end

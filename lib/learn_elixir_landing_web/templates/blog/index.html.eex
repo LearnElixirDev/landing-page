@@ -1,3 +1,25 @@
-<h3>Blog</h3>
+<%= link to: "/blogs/dangers-of-genservers" do %>
+  <div class="flex flex-column justify-between mdc-card mdc-card__primary-action svelte-np5hyz" tabindex="0">
+    <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(&quot;blog-elixir-dangers-of-genservers.ebf92f59742ca6dc324c772021bb59e4.jpeg&quot;);">
+    </div>
+    <div class="ph2 navy">
+      <small class="f7">October 29th 2018</small>
+      <h2 class="lh-copy mt1">The Dangers of GenServers in Elixir</h2>
+      <h3 class="normal mt1 f7">by
+        <a href="https://mikakalathil.ca">Mika Kalathil</a>
+      </h3>
+    </div>
 
-
+    <p class="navy ph2 lh-copy f6">
+        At Lure, we use the latest software to bring you the best user experience. In this article, Lure CTEO Mika Kalathil outlines some of the
+      technical details of GenServers in Elixir, which we use to serve a large multitude of people with high speed. This is a deep dive into GenServers and discovering their limitations and strengths.
+    </p>
+    <div class="mdc-card__actions">
+      <div class="mdc-card__action-buttons">
+        <button class="mdc-button mdc-button--text mdc-ripple-upgraded" type="button">
+          <span>Read</span>
+        </button>
+      </div>
+    </div>
+  </div>
+<% end %>
