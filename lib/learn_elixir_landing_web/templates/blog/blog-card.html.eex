@@ -1,0 +1,22 @@
+<%= link to: "/blogs/#{@name}" do %>
+  <article class="br2 ba dark-gray b--black-10 mb5 card center">
+    <img src="<%= @image_url %>" class="db w-100 br2 br--top" alt="Photo exploding volcano">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <small class='f7 f-avenirl'><%= @date %></small>
+          <h4 class='lh-copy mt1 purple f-avenirm'><%= @title %></h2>
+          <h5 class='normal mt1 f7 f-avenirl'>by
+            <span class='blue f-avenirm'><%= @author %></span>
+          </h3>
+        </div>
+      </div>
+
+      <aside class="f6 lh-copy measure mt2 mid-gray f-avenirl">
+        <%= @description %>
+      </aside>
+
+      <button class='button-small'>Read</button>
+    </div>
+  </article>
+<% end %>

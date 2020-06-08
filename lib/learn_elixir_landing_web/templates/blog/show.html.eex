@@ -1,1 +1,1 @@
-<%= LearnElixirLandingWeb.MarkdownViewHelper.render(@blog_name) %>
+<%= render_blog(@blog_name) %>

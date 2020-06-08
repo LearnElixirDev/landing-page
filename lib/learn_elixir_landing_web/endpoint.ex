@@ -25,13 +25,13 @@ defmodule LearnElixirLandingWeb.Endpoint do
       at: "/",
       from: :learn_elixir_landing,
       gzip: true,
-      only: ~w(css static js vendor)
+      only: ~w(css static js vendor blog-images)
   else
     plug Plug.Static,
       at: "/",
       from: :learn_elixir_landing,
       gzip: false,
-      only: ~w(css static js vendor)
+      only: ~w(css static js vendor blog-images)
   end
 
   # Code reloading can be explicitly enabled under the
