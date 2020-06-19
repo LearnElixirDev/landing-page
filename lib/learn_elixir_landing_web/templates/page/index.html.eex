@@ -3,11 +3,11 @@
     <div class='flex justify-between items-center'>
       <div>
         <h1 class='white fw-b f-domine'>Level Up</h1>
-        <p class='mt4 f-hero white f-domine'>Learn Elixir is your direct route through</p>
-        <p class='mt2 f-hero white f-domine'>beginner, intermediate, & advanced, to</p>
-        <p class='mt2 f-hero white f-domine'>Elixir Mastery.</p>
+        <p class='mt4 f-hero white f-avenirl'>Learn Elixir is your direct route through</p>
+        <p class='mt2 f-hero white f-avenirl'>beginner, intermediate, & advanced, to</p>
+        <p class='mt2 f-hero white f-avenirl'>Elixir Mastery.</p>
 
-        <a class='db mt4' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">
+        <a class='db mt5' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">
           <button class='button'>Start Course</button>
         </a>
       </div>
@@ -19,25 +19,25 @@
 
     <div class='flex justify-between mt5 white'>
       <div class='pr4 mxw-l'>
-        <h3 class='f-avenirb'>Exciting Projects</h3>
+        <h3 class='f-avenirm'>Exciting Projects</h3>
 
-        <p class='mt4 f-avenirm lh-copy'>
+        <p class='mt3 f-avenirl lh-copy'>
           Elixir is a dynamic, functional language designed for building scalable and maintainable applications like WhatsApp, Pinterest, and Discord.
         </p>
       </div>
 
       <div class='ph4 mxw-l'>
-        <h3 class='f-avenirb'>High Demand</h3>
+        <h3 class='f-avenirm'>High Demand</h3>
 
-        <p class='mt4 f-avenirm lh-copy'>
+        <p class='mt3 f-avenirl lh-copy'>
           Stack Overflow’s 2019 survey placed Elixir as the 5th highest paid language globally and 8th most loved!
         </p>
       </div>
 
       <div class='pl4 mxw-l'>
-        <h3 class='f-avenirb'>Become Indispensable</h3>
+        <h3 class='f-avenirm'>Become Indispensable</h3>
 
-        <p class='mt4 f-avenirm lh-copy'>
+        <p class='mt3 f-avenirl lh-copy'>
           Be sought after or retained by companies by separating yourself from the generalists as a specialist.
         </p>
       </div>
@@ -83,10 +83,10 @@
 <section class='vh-75 flex flex-column justify-center items-center bg-light-purple white'>
   <h2 class='f-domine'>Book Call</h2>
 
-  <p class='mt4 f-avenirm'>Apply now to see if you are prepared to learn Elixir</p>
+  <p class='mt4 f-avenirl'>Apply now to see if you are prepared to learn Elixir</p>
 
-  <div class='mt5'>
-    <a class='db mt4' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">
+  <div class='mt4'>
+    <a class='db mt2' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">
       <button class='button'>Book Call</button>
     </a>
   </div>

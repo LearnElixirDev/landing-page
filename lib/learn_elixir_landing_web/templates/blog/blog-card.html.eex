@@ -1,7 +1,7 @@
-<%= link to: "/blogs/#{@name}" do %>
-  <article class="br2 ba dark-gray b--black-10 mb5 card center">
+<%= link to: "/blogs/#{@name}", class: "card-link-container" do %>
+  <article class="br2 ba dark-gray b--black-10 mb5 card">
     <img src="<%= @image_url %>" class="db w-100 br2 br--top" alt="Photo exploding volcano">
-    <div class="pa2 ph3-ns pb3-ns">
+    <div class="pa2 ph3-ns pb3-ns flex flex-column">
       <div class="dt w-100 mt1">
         <div class="dtc">
           <small class='f7 f-avenirl'><%= @date %></small>
@@ -16,7 +16,9 @@
         <%= @description %>
       </aside>
 
-      <button class='button-small'>Read</button>
+      <%= if not @disabled? do %>
+        <button class='button-small mt-auto'>Read</button>
+      <% end %>
     </div>
   </article>
 <% end %>

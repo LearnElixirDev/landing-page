@@ -1,7 +1,7 @@
 <section class='ph3 methodology background-gradient--reverse white center flex flex-column items-center justify-center vh-70'>
-  <h2>Methodology</h2>
-  <p class='mt4 f-avenirm lh-copy mxw-xl'>We help developers earn six-figure incomes programming Elixir via</p>
-  <p class='f-avenirm lh-copy mxw-xl'>mentorship, exclusive content, and industry connections</p>
+  <h2 class='f-domine'>Methodology</h2>
+  <p class='mt4 f-avenirl lh-copy mxw-xl'>We help developers earn six-figure incomes programming Elixir via</p>
+  <p class='f-avenirl lh-copy mxw-xl'>mentorship, exclusive content, and industry connections</p>
 
   <div class='mt5'>
     <button class='button'>View Course</button>
@@ -38,7 +38,7 @@
   </div>
 </section>
 
-<section class='ph3 pv5 white background-gradient flex flex-column justify-center items-center f-avenirm lh-copy'>
+<section class='ph3 pt6 pb5 white background-gradient flex flex-column justify-center items-center f-avenirl lh-copy'>
   <h2>How to Learn a New Programing Language FAST</h2>
   <h3 class='mt2 fw1'>Mastery comes from knowledge, wisdom, and experience through the 4 levels of learning</h3>
 
@@ -48,7 +48,7 @@
         <%= render LearnElixirLandingWeb.IconView, "ape.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirb'>Unconscious Incompetence</h3>
+      <h4 class='bold mt3 f-avenirm mr-auto pl2'>Unconscious Incompetence</h3>
       <p class='methodology-evolution-text mt2 ph2 fw1'>You don’t know what you don’t know</p>
     </div>
 
@@ -57,7 +57,7 @@
         <%= render LearnElixirLandingWeb.IconView, "semi_human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirb'>Conscious Incompetence</h3>
+      <h4 class='bold mt3 f-avenirm mr-auto pl2'>Conscious Incompetence</h3>
       <p class='methodology-evolution-text mt2 ph2 fw1'>You know what you don’t know. You can see your shortcomings and understand where you need to improve</p>
     </div>
 
@@ -66,7 +66,7 @@
         <%= render LearnElixirLandingWeb.IconView, "human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirb'>Conscious Competence</h3>
+      <h4 class='bold mt3 f-avenirm mr-auto pl2'>Conscious Competence</h3>
       <p class='methodology-evolution-text mt2 ph2 fw1'>You know what you know. You are starting to get the hang of things but it still takes  effort and concentration</p>
     </div>
 
@@ -75,8 +75,8 @@
         <%= render LearnElixirLandingWeb.IconView, "computer_human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirb'>Unconscious Competence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1'>You don’t know what you know  You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot and don’t understand why others can’t perform on your level</p>
+      <h4 class='bold mt3 f-avenirm mr-auto pl2'>Unconscious Competence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1'>You don’t know what you know  You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot</p>
     </div>
   </div>
 </section>
@@ -186,7 +186,7 @@
 <section class='mt5 pt5 purple f-avenirm lh-copy'>
   <div>
     <h2 class='f-avenirb tc'>Experience</h2>
-    <p class='center mt4'>
+    <p class='mt4 mxn tc'>
       <span class='db'>Push past previous plateaus - combine the knowledge you’ve acquired</span>
       <span class='db'>and the wisdom you’ve gleaned to form your unique perspective and</span>
       <span class='db'>engrave it into the industry</span>
@@ -244,12 +244,15 @@
   <p class='db center mt3'>To be truly great is a lifelong process. It’s possible to pioneer your path and brute force your competency over time, but a bullet train has been built if you want to smoothly speed ahead of the competition.</p>
 </section>
 
-<section class='mt5 ph3 vh-75 flex flex-column justify-center items-center bg-light-purple white f-avenirm'>
-  <h2 class='lh-title'>We only want to work with people we know we can help</h2>
-  <p class='mt4 lh-copy'>Book a call now with Jeremy Graham to see if we’re a good fit for each other.</p>
-  <p class='mt2 lh-copy'>Once we get to know you and know we can help you get to your goal, pricing options will be presented to you and we can discuss the best steps moving forward.</p>
+<section class='mt5 ph3 vh-75 flex flex-column justify-center items-center bg-light-purple white f-avenirl'>
+  <h2 class='lh-title f-domine'>We only want to work with people we know we can help</h2>
+  <p class='mt4 lh-copy mxn tc'>Book a call now with Jeremy Graham to see if we’re a good fit for each other.</p>
+  <p class='lh-copy mxn tc'>
+    <span class='db'>Once we get to know you and know we can help you get to your goal, pricing options will be</span>
+    <span class='db'>presented to you and we can discuss the best steps moving forward.</span>
+  </p>
 
-  <div class='mt5'>
+  <div class='mt4'>
     <button class='button'>
       <!-- Calendly link widget begin -->
       <a href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">Book Call</a>

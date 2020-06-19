@@ -7,7 +7,7 @@
 
   <nav role='navigation'>
     <ul class='flex f-avenirl pt3 f3'>
-      <li><%= link "View Course", to: "https://course.learn-elixir.dev/courses/elixir-mastery" %></li>
+      <li><%= link "Home", to: "/" %></li>
       <li class='ml4'><%= link "Methodology", to: "/methodology" %></li>
       <li class='ml4'><%= link "Dev Blog", to: "/blogs" %></li>
     </ul>
