@@ -2,14 +2,9 @@
 # from environment variables. You can also hardcode secrets,
 # although such is generally not recommended and you have to
 # remember to add this file to your .gitignore.
-use Mix.Config
+import Config
 
-secret_key_base =
-  System.get_env("SECRET_KEY_BASE") ||
-    raise """
-    environment variable SECRET_KEY_BASE is missing.
-    You can generate one by calling: mix phx.gen.secret
-    """
+secret_key_base = "8qAyTI8cum0J56zPRam4oachZd7/I5XyqpjCNlIYku0qMci0YP/HqDZ2Zf/PwohZ"
 
 config :learn_elixir_landing, LearnElixirLandingWeb.Endpoint,
   http: [
@@ -18,12 +13,4 @@ config :learn_elixir_landing, LearnElixirLandingWeb.Endpoint,
   ],
   secret_key_base: secret_key_base
 
-# ## Using releases (Elixir v1.9+)
-#
-# If you are doing OTP releases, you need to instruct Phoenix
-# to start each relevant endpoint:
-#
-#     config :learn_elixir_landing, LearnElixirLandingWeb.Endpoint, server: true
-#
-# Then you can assemble a release by calling `mix release`.
-# See `mix help release` for more information.
+config :learn_elixir_landing, LearnElixirLandingWeb.Endpoint, server: true

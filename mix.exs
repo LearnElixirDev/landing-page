@@ -10,7 +10,15 @@ defmodule LearnElixirLanding.MixProject do
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      default_release: :learn_elixir_landing,
+      releases: [
+        learn_elixir_landing: [
+          include_executables_for: [:unix],
+          steps: [:assemble, :tar],
+          applications: [learn_elixir_landing: :permanent, runtime_tools: :permanent]
+        ]
+      ]
     ]
   end
 

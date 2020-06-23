@@ -15,7 +15,7 @@ defmodule LearnElixirLandingWeb.BlogController do
       title: "The Many uses of Elixir's Task Module",
       creation_date: "July 25th 2019",
       author: "Mika Kalathil",
-      image_url: "https://learn-elixir.dev/hosted/images/81/c3e2d2ea3f461694838181704971ef/art-big-data-bright-158826.jpg",
+      image_url: "/blog-images/tasks-img.jpg",
     }
   }
 
@@ -35,7 +35,5 @@ defmodule LearnElixirLandingWeb.BlogController do
 
     render(conn, "show.html", blog_name: blog_name, blog_details: @blog_details_map[blog_name])
   end
-
-  defp blog_details(blog_name), do: @blog_details_map[blog_name]
 end
 

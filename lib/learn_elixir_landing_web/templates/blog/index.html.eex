@@ -16,7 +16,7 @@
 
     <%= render(LearnElixirLandingWeb.BlogView, "blog-card.html",
       name: "uses-of-elixir-task-module" ,
-      image_url: "https://learn-elixir.dev/hosted/images/81/c3e2d2ea3f461694838181704971ef/art-big-data-bright-158826.jpg",
+      image_url: Routes.static_path(@conn, "/blog-images/tasks-img.jpg"),
       date: "July 25th 2019",
       title: "The Many uses of Elixir's Task Module",
       author: "Mika Kalathil",
