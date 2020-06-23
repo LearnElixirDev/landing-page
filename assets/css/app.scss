@@ -17,6 +17,7 @@
 // Components
 @import 'components/card';
 @import 'components/bottom-purple-box';
+@import 'components/blog-img';
 @import 'components/markdown';
 @import 'components/home-page';
 @import 'components/button';
@@ -46,6 +47,9 @@
 @import 'helpers/position-pull';
 @import 'helpers/transform-transition';
 @import 'helpers/width';
+
+// Vendor
+@import '~github-markdown-css';
 
 // Tachyons
 @import '~tachyons-sass/scss/box-sizing';

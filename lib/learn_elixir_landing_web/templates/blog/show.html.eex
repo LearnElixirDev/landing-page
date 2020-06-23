@@ -1,1 +1,10 @@
-<%= render_blog(@blog_name) %>
+<h1 class='tc f-avenirm mt3 light-purple'><%= @blog_details.title %></h1>
+<small class='db tc f-avenirl mt2 gray'>
+  <%= @blog_details.creation_date %> - <%= @blog_details.author %>
+</small>
+
+<img class='mt3 h4 vh-75 w-100 blog-img' src='<%= @blog_details.image_url %>'>
+
+<article class='mt5'>
+  <%= render_blog(@blog_name) %>
+</article>

@@ -1,3 +1,5 @@
+$zig-zag-size-gt: 800px;
+
 .methodology-how-to-learn-fast--container {
   @include breakpoint($lt-sm) {
     > h2, > h3 {
@@ -54,78 +56,177 @@ section.methodology {
   height: 162px;
 }
 
+.methodology-experience-gain .zig-zag-img {
+  @include breakpoint($zig-zag-size-gt) {
+    left: -200px;
+  }
+
+  @include breakpoint(850px) {
+    left: -150px;
+  }
+
+  @include breakpoint(950px) {
+    left: -80px;
+  }
+
+  @include breakpoint(1050px) {
+    left: -30px;
+  }
+}
+
+.methodology-wisdom-gain .zig-zag-img {
+  left: -60px;
+  top: 60px;
+}
+
+.methodology-mobile-step-img {
+  margin-top: 3rem;
+
+  @include breakpoint($zig-zag-size-gt) {
+    display: none;
+  }
+}
+
+.methodology-gains-item {
+  @include breakpoint(max-width 799px) {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+
+.zig-zag-img.zig-zag-img {
+  display: none;
+
+  @include breakpoint($zig-zag-size-gt) {
+    display: flex;
+  }
+}
+
+.methodology-gains-container {
+  width: 90%;
+
+  @include breakpoint(1170px) {
+    width: 80%;
+    margin-top: 0;
+  }
+}
+
 .methodology-knowldedge-gain {
-  height: 1208px;
-  margin-top: 125px;
+  @include breakpoint($zig-zag-size-gt) {
+    margin-top: 125px;
+    height: 1208px;
 
-  .methodology-consolidated-resources {
-    margin-top: 200px;
-  }
+    .methodology-consolidated-resources {
+      margin-top: 200px;
+    }
 
-  .methodology-one-hundred-percent {
-    margin-top: 200px;
-  }
+    .methodology-one-hundred-percent {
+      margin-top: 200px;
+    }
 
-  .methodology-self-paced {
-    margin-top: 225px;
+    .methodology-self-paced {
+      margin-top: 225px;
+    }
   }
 }
 
 .methodology-wisdom-gain {
-  height: 1622px;
-  margin-top: 105px;
+  @include breakpoint($zig-zag-size-gt) {
+    height: 1622px;
+    margin-top: 105px;
 
-  .methodology-live-programming {
-    margin-top: 100px;
-  }
+    .methodology-live-programming {
+      margin-top: 100px;
+    }
 
-  .methodology-industry-experience {
-    margin-top: 125px;
-  }
+    .methodology-industry-experience {
+      margin-top: 125px;
+    }
 
-  .methodology-quick-clarification {
-    margin-top: 300px;
-  }
+    .methodology-quick-clarification {
+      margin-top: 300px;
+    }
 
-  .methodology-speed-run {
-    margin-top: 350px;
+    .methodology-speed-run {
+      margin-top: 300px;
+    }
   }
 }
 
 .methodology-experience-gain {
-  height: 1919px;
-  margin-top: 125px;
+  @include breakpoint($zig-zag-size-gt) {
+    height: 1919px;
+    margin-top: 125px;
 
-  .methodology-practical-application {
-    margin-top: 260px;
-  }
+    .methodology-practical-application {
+      margin-top: 260px;
+    }
 
-  .methodology-proof-of-work {
-    margin-top: 225px;
-  }
+    .methodology-proof-of-work {
+      margin-top: 225px;
+    }
 
-  .methodology-fam {
-    margin-top: 200px;
-  }
+    .methodology-fam {
+      margin-top: 200px;
+    }
 
-  .methodology-sandbox {
-    margin-top: 175px;
+    .methodology-sandbox {
+      margin-top: 175px;
+    }
   }
 }
 
 .underpaid {
+  @include breakpoint($lt-md) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .seesaw_1 svg,
   .seesaw_2 svg {
-    position: absolute;
+    @include breakpoint(860px) {
+      position: absolute;
+    }
   }
 
   .seesaw_1 {
-    height: 400px;
-    top: -60px;
+    @include breakpoint(860px) {
+      height: 400px;
+      top: 25px;
+    }
+
+    @include breakpoint(1170px) {
+      top: -60px;
+    }
   }
 
   .seesaw_2 {
-    height: 300px;
-    top: -250px;
+    @include breakpoint(860px) {
+      height: 300px;
+      top: -175px;
+    }
+
+    @include breakpoint(1170px) {
+      top: -250px;
+    }
+  }
+
+  .seesaw_1,
+  .seesaw_2 {
+    width: 80%;
+    margin-top: $spacing-large;
+    margin-bottom: $spacing-large;
+
+    @include breakpoint(860px) {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 850px;
+      position: relative;
+    }
+
+    @include breakpoint(1170px) {
+      width: 1130px;
+    }
   }
 }

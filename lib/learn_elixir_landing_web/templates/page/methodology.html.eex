@@ -9,7 +9,11 @@
 </section>
 
 <section class='purple ph3 mv5 pv5 f-avenirm underpaid'>
-  <h2 class='tc lh-title'>Underpaid, Overworked, Oversaturated</h2>
+  <div class='w-50 center db dn-ns'>
+    <%= render LearnElixirLandingWeb.IconView, "falling.html", conn: @conn %>
+  </div>
+
+  <h2 class='tc lh-title mt5 mt0-ns'>Underpaid, Overworked, Oversaturated</h2>
 
   <div class='flex flex-column justify-center items-center mt5 lh-copy'>
     <p>
@@ -17,30 +21,38 @@
     </p>
 
     <p>
-      There's a folder of unread resumes in every hiring manager’s inbox all waiting for the same reply. Therefore salaries are low, overtime is expected, working conditions are unbearable, and you've reached your limit. On top of that, someone somewhere who's been unemployed for the last few months would be happy to tolerate the circumstances. and the cycle repeats
+    There's a folder of unread resumes in every hiring manager’s inbox all waiting for the same reply. Therefore salaries are low, overtime is expected, working conditions are unbearable, and you've reached your limit. On top of that, someone somewhere who's been unemployed for the last few months would be happy to tolerate the circumstances, <strong>and the cycle repeats</strong>
     </p>
 
-    <div class='w-80 relative seesaw_1'>
+    <div class='w-50 center mv5 db dn-ns'>
+      <%= render LearnElixirLandingWeb.IconView, "running.html", conn: @conn %>
+    </div>
+
+    <div class='seesaw_1 dn db-ns'>
       <%= render LearnElixirLandingWeb.IconView, "seesaw_1.html", conn: @conn %>
     </div>
 
     <p>
-      What would increase your standard of living? Want to work from home? Travel and work? A raise? The power of choice is in the hands of the specialist.
+      What would increase your standard of living? Want to work from home? Travel and work? A raise? The power of choice is in the hands of <strong>the specialist</strong>.
     </p>
 
     <p>
       If you are one of only a handful of people who are qualified and available to solve a company's unique and interesting problem in a timely manner, you gain the flexibility to make reasonable demands!
     </p>
 
-    <div class='w-80 relative seesaw_2' height='300'>
+    <div class='w-50 center db dn-ns mt3'>
+      <%= render LearnElixirLandingWeb.IconView, "reaching.html", conn: @conn %>
+    </div>
+
+    <div class='seesaw_2 dn db-ns'>
       <%= render LearnElixirLandingWeb.IconView, "seesaw_2.html", conn: @conn %>
     </div>
   </div>
 </section>
 
 <section class='ph3 pt6 pb5 white background-gradient flex flex-column justify-center items-center f-avenirl lh-copy methodology-how-to-learn-fast--container'>
-  <h2 class='tc lh-title'>How to Learn a New Programing Language FAST</h2>
-  <h3 class='mt2 fw1 tc'>Mastery comes from knowledge, wisdom, and experience through the 4 levels of learning</h3>
+  <h2 class='tc lh-title ph4'>How to Learn a New Programing Language FAST</h2>
+  <h3 class='mt2 fw1 tc ph4'>Mastery comes from knowledge, wisdom, and experience through the 4 levels of learning</h3>
 
   <div class='mt5 flex justify-between flex-row-ns flex-column items-center items-end-ns methodology-how-to-learn-fast'>
     <div class='flex flex-column items-center justify-center flex-item--same-width'>
@@ -84,18 +96,22 @@
 <section class='mt5 pt5 purple f-avenirm lh-copy'>
   <div class='tc'>
     <h2 class='f-avenirb'>Knowledge</h2>
-    <p class='db center mt4 tc'>
-      <span class='db'>Theory, information, and facts are the cognitive resources or</span>
-      <span class='db'>building blocks towards the practical understanding of a subject</span>
+    <p class='db center mt4 tc ph4 ph0-ns'>
+      <span class='db-ns'>Theory, information, and facts are the cognitive resources or</span>
+      <span class='db-ns'>building blocks towards the practical understanding of a subject</span>
     </p>
   </div>
 
-  <div class='w-80 center flex flex-column relative methodology-knowldedge-gain'>
-    <div class='absolute absolute--fill flex justify-center'>
+  <div class='center flex flex-column relative methodology-knowldedge-gain methodology-gains-container'>
+    <div class='absolute absolute--fill flex justify-center zig-zag-img'>
       <%= render LearnElixirLandingWeb.IconView, "knowledge_gain.html", conn: @conn %>
     </div>
 
-    <div class='mr-auto methodology-consolidated-resources'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-01.html", conn: @conn %>
+    </div>
+
+    <div class='mr-auto methodology-gains-item methodology-consolidated-resources'>
       <h3 class='f-avenirb'>Consolidated Resources</h3>
       <p class='mt3'>
         <span class='db'>See the big picture from day one rather</span>
@@ -104,7 +120,11 @@
       </p>
     </div>
 
-    <div class='ml-auto'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-02.html", conn: @conn %>
+    </div>
+
+    <div class='ml-auto methodology-gains-item'>
       <h3 class='f-avenirb methodology-one-hundred-percent'>100%</h3>
       <p class='mt3'>
         <span class='db'>Course material covers all the</span>
@@ -114,7 +134,11 @@
       </p>
     </div>
 
-    <div class='mr-auto methodology-self-paced'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-03.html", conn: @conn %>
+    </div>
+
+    <div class='mr-auto methodology-gains-item methodology-self-paced'>
       <h3 class='f-avenirb'>Self Paced</h3>
       <p class='mt3'>
         <span class='db'>Watch videos or read the transcripts</span>
@@ -124,24 +148,32 @@
         <span class='db'>building off the last</span>
       </p>
     </div>
+
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-04.html", conn: @conn %>
+    </div>
   </div>
 </section>
 
 <section class='mt5 pt5 purple f-avenirm lh-copy'>
   <div class='tc'>
     <h2 class='f-avenirb'>Wisdom</h2>
-    <p class='center mt4'>
-      <span class='db'>Only take advice from people who have the knowledge you want</span>
-      <span class='db'>and you’ll learn sooner than you’d expect</span>
+    <p class='center mt4 ph4 ph0-ns'>
+      <span class='db-ns'>Only take advice from people who have the knowledge you want</span>
+      <span class='db-nw'>and you’ll learn sooner than you’d expect</span>
     </p>
   </div>
 
-  <div class='w-80 center flex flex-column relative methodology-wisdom-gain'>
-    <div class='absolute absolute--fill flex justify-center'>
+  <div class='center flex flex-column relative methodology-wisdom-gain methodology-gains-container'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-05.html", conn: @conn %>
+    </div>
+
+    <div class='absolute absolute--fill flex justify-center zig-zag-img'>
       <%= render LearnElixirLandingWeb.IconView, "wisdom_gain.html", conn: @conn %>
     </div>
 
-    <div class='mr-auto methodology-live-programming'>
+    <div class='mr-auto methodology-gains-item methodology-live-programming'>
       <h3 class='f-avenirb'>Live Programming</h3>
 
       <p class='mt3'>
@@ -153,7 +185,11 @@
       </p>
     </div>
 
-    <div class='ml-auto methodology-industry-experience'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-06.html", conn: @conn %>
+    </div>
+
+    <div class='ml-auto methodology-gains-item methodology-industry-experience'>
       <h3 class='f-avenirb'>Industry Experience</h3>
       <p class='mt3'>
         <span class='db'>Soft skills, hard skills, where to look? who to talk</span>
@@ -163,7 +199,11 @@
       </p>
     </div>
 
-    <div class='mr-auto methodology-quick-clarification'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-07.html", conn: @conn %>
+    </div>
+
+    <div class='mr-auto methodology-gains-item methodology-quick-clarification'>
       <h3 class='f-avenirb'>Quick Clarification</h3>
       <p class='mt3'>
         <span class='db'>Message mentors on Facebook or</span>
@@ -172,7 +212,11 @@
       </p>
     </div>
 
-    <div class='ml-auto methodology-speed-run'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-08.html", conn: @conn %>
+    </div>
+
+    <div class='ml-auto methodology-gains-item methodology-speed-run'>
       <h3 class='f-avenirb'>Speed Run</h3>
       <p class='mt3'>
         <span class='db'>Save years of trial and error and prevent the</span>
@@ -181,24 +225,32 @@
       </p>
     </div>
   </div>
+
+  <div class='methodology-mobile-step-img w-40 center'>
+    <%= render LearnElixirLandingWeb.IconView, "methodology-step-04.html", conn: @conn %>
+  </div>
 </section>
 
 <section class='mt5 pt5 purple f-avenirm lh-copy'>
   <div>
     <h2 class='f-avenirb tc'>Experience</h2>
-    <p class='mt4 mxn tc'>
-      <span class='db'>Push past previous plateaus - combine the knowledge you’ve acquired</span>
-      <span class='db'>and the wisdom you’ve gleaned to form your unique perspective and</span>
-      <span class='db'>engrave it into the industry</span>
+    <p class='mt4 mxn tc ph4 ph0-ns'>
+      <span class='db-ns'>Push past previous plateaus - combine the knowledge you’ve acquired</span>
+      <span class='db-ns'>and the wisdom you’ve gleaned to form your unique perspective and</span>
+      <span class='db-ns'>engrave it into the industry</span>
     </p>
   </div>
 
-  <div class='w-80 center flex flex-column relative methodology-experience-gain'>
-    <div class='absolute absolute--fill flex justify-center'>
+  <div class='center flex flex-column relative methodology-experience-gain methodology-gains-container'>
+    <div class='absolute absolute--fill flex justify-center zig-zag-img'>
       <%= render LearnElixirLandingWeb.IconView, "experience_gain.html", conn: @conn %>
     </div>
 
-    <div class='mr-auto methodology-practical-application'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-09.html", conn: @conn %>
+    </div>
+
+    <div class='mr-auto methodology-gains-item methodology-practical-application'>
       <h3 class='f-avenirb'>Practical Application</h3>
       <p>
         <span class='db'>Test your comprehension with quizzes</span>
@@ -207,7 +259,11 @@
       </p>
     </div>
 
-    <div class='ml-auto methodology-proof-of-work'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-10.html", conn: @conn %>
+    </div>
+
+    <div class='ml-auto methodology-gains-item methodology-proof-of-work'>
       <h3 class='f-avenirb'>Proof of Work</h3>
       <p>
         <span class='db'>Add mid-term and final projects as</span>
@@ -216,7 +272,11 @@
       </p>
     </div>
 
-    <div class='mr-auto methodology-fam'>
+    <div class='methodology-mobile-step-img w-40 center'>
+      <%= render LearnElixirLandingWeb.IconView, "methodology-step-11.html", conn: @conn %>
+    </div>
+
+    <div class='mr-auto methodology-gains-item methodology-fam'>
       <h3 class='f-avenirb'>Learn Elixir Fam</h3>
       <p>
         <span class='db'>Recommendations, referrals, and</span>
@@ -226,7 +286,11 @@
       </p>
     </div>
 
-    <div class='ml-auto methodology-sandbox'>
+    <div class='methodology-mobile-step-img w-40 center'>
+        <%= render LearnElixirLandingWeb.IconView, "methodology-step-12.html", conn: @conn %>
+    </div>
+
+    <div class='ml-auto methodology-gains-item methodology-sandbox'>
       <h3 class='f-avenirb'>Sandbox</h3>
       <p>
         <span class='db'>Startups, scale enterprises, improve the</span>
@@ -236,12 +300,16 @@
         <span class='db'>You choose your own adventure!</span>
       </p>
     </div>
+
+    <div class='methodology-mobile-step-img w-40 center'>
+        <%= render LearnElixirLandingWeb.IconView, "methodology-step-13.html", conn: @conn %>
+    </div>
   </div>
 </section>
 
 <section class='pv5 mv5 purple f-avenirm lh-copy'>
   <h2 class='f-avenirb tc'>Mastery is a Marathon</h2>
-  <p class='db center mt3'>To be truly great is a lifelong process. It’s possible to pioneer your path and brute force your competency over time, but a bullet train has been built if you want to smoothly speed ahead of the competition.</p>
+  <p class='db center mt3 w-80'>To be truly great is a lifelong process. It’s possible to pioneer your path and brute force your competency over time, but a bullet train has been built if you want to smoothly speed ahead of the competition.</p>
 </section>
 
 <section class='mt5 ph3 vh-75 flex flex-column justify-center items-center bg-light-purple white f-avenirl bottom-purple-box methodology-bottom-box'>

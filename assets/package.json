@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
+    "github-markdown-css": "^4.0.0",
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
     "prismjs": "^1.20.0",
