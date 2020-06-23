@@ -1,3 +1,39 @@
+.methodology-how-to-learn-fast--container {
+  @include breakpoint($lt-sm) {
+    > h2, > h3 {
+      width: 80%;
+    }
+  }
+}
+
+.methodology-how-to-learn-fast {
+  @include breakpoint($lt-sm) {
+    h4 {
+      font-size: 1.75rem;
+    }
+
+    > div {
+      max-width: 60%;
+    }
+  }
+}
+
+.methodology-bottom-box p {
+  @include breakpoint($lt-md) {
+    font-size: 1.25rem;
+  }
+
+  span {
+    @include breakpoint($gt-sm) {
+      display: block
+    }
+  }
+}
+
+section.methodology {
+  min-height: 28.5rem;
+}
+
 .methodology-ape  {
   width: 141px;
 }

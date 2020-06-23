@@ -16,6 +16,7 @@
 
 // Components
 @import 'components/card';
+@import 'components/bottom-purple-box';
 @import 'components/markdown';
 @import 'components/home-page';
 @import 'components/button';
@@ -30,6 +31,7 @@
 
 // Helpers
 @import 'helpers/font';
+@import 'helpers/display';
 @import 'helpers/border-glow';
 @import 'helpers/border';
 @import 'helpers/filter';
@@ -45,7 +47,7 @@
 @import 'helpers/transform-transition';
 @import 'helpers/width';
 
-// Vendor
+// Tachyons
 @import '~tachyons-sass/scss/box-sizing';
 @import '~tachyons-sass/scss/aspect-ratios';
 @import '~tachyons-sass/scss/images';

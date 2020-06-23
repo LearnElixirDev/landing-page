@@ -8,7 +8,7 @@ defmodule LearnElixirLandingWeb.MarkdownViewHelper do
 
   defp render_content(blog_content) do
     Phoenix.HTML.raw("""
-    <div class='markdown-content'>
+    <div class='markdown-body'>
       #{blog_content}
     </div>
     """)

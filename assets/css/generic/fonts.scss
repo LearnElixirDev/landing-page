@@ -1,5 +1,9 @@
 html {
-  @include breakpoint($lt-lg) {
+  @include breakpoint($lt-sm) {
+    font-size: 12px;
+  }
+
+  @include breakpoint($gt-xs) {
     font-size: 14px;
   }
 

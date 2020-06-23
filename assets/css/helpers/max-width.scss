@@ -10,6 +10,12 @@
   max-width: 40rem;
 }
 
+.mxw-l-ns {
+  @include breakpoint($gt-sm) {
+    max-width: 40rem;
+  }
+}
+
 .mxw-xl {
   max-width: 50rem;
 }

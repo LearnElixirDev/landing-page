@@ -12,3 +12,8 @@ $xs: max-width ($gt-xs - 1px);
 $sm: $gt-xs ($gt-sm - 1px);
 $md: $gt-sm ($gt-md - 1px);
 $lg: $gt-md ($gt-lg - 1px);
+
+// This is for Tachyons
+$breakpoint-not-small: 'screen and (min-width: #{$gt-xs})';
+$breakpoint-medium: 'screen and (min-width: #{$gt-xs}) and (max-width: #{$gt-md})';
+$breakpoint-large: 'screen and (min-width: #{$gt-md})';

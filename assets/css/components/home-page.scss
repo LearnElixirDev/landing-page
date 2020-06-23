@@ -1,5 +1,19 @@
+section.home-page-main {
+  min-height: 620px;
+}
+
+.home-page-value-prop {
+  @include breakpoint($lt-sm) {
+    max-width: 375px;
+  }
+}
+
 .home-page-main .home-page-main--hero-container {
   max-width: 1575px;
+
+  @include breakpoint($gt-md) {
+    max-height: 600px;
+  }
 }
 
 .home-page-info {

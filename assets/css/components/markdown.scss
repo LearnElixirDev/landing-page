@@ -1,21 +1,8 @@
-.markdown-content {
-  width: 75%;
+.markdown-body {
+  width: 60%;
   margin: 0 auto;
   font-family: $avenirm;
-  line-height: 1.2;
-
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    font-family: $domine;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-  }
-
-  p {
-    margin: 0 auto;
-  }
-
-  pre {
-
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

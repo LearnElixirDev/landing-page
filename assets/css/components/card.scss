@@ -3,21 +3,22 @@ $img-height: 241px;
 
 .card-wrapper-container {
   flex-wrap: wrap;
+  max-width: 1550px;
 }
 
 .card-link-container {
   display: block;
 
-  width: 30%;
-  min-width: 250px;
-  max-width: 365px;
-  height: $height;
+  width: 75%;
+  max-width: 390px;
+  margin-top: $spacing-large;
 
-  @include breakpoint($lt-md) {
-    margin-top: $spacing-large;
-    width: 51%;
-    min-width: unset;
-    max-width: unset;
+  @include breakpoint($gt-sm) {
+    margin-top: 0;
+    width: 30%;
+    min-width: 250px;
+    max-width: 365px;
+    height: $height;
   }
 }
 

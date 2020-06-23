@@ -1,15 +1,31 @@
 .comp-pers-white {
-  width: 438px;
+  width: 75%;
+
+  @include breakpoint($gt-xs) {
+    width: 438px;
+  }
 }
 
 .comp-img-1 {
-  width: 607px;
+  width: 90%;
+
+  @include breakpoint($gt-xs) {
+    width: 607px;
+  }
 }
 
 .comp-img-2 {
-  width: 370px;
+  width: 70%;
+
+  @include breakpoint($gt-xs) {
+    width: 370px;
+  }
 }
 
 .comp-img-3 {
-  width: 567px;
+  width: 85%;
+
+  @include breakpoint($gt-xs) {
+    width: 567px;
+  }
 }

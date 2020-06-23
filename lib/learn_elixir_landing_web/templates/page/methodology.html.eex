@@ -9,7 +9,7 @@
 </section>
 
 <section class='purple ph3 mv5 pv5 f-avenirm underpaid'>
-  <h2 class='tc'>Underpaid, Overworked, Oversaturated</h2>
+  <h2 class='tc lh-title'>Underpaid, Overworked, Oversaturated</h2>
 
   <div class='flex flex-column justify-center items-center mt5 lh-copy'>
     <p>
@@ -38,18 +38,18 @@
   </div>
 </section>
 
-<section class='ph3 pt6 pb5 white background-gradient flex flex-column justify-center items-center f-avenirl lh-copy'>
-  <h2>How to Learn a New Programing Language FAST</h2>
-  <h3 class='mt2 fw1'>Mastery comes from knowledge, wisdom, and experience through the 4 levels of learning</h3>
+<section class='ph3 pt6 pb5 white background-gradient flex flex-column justify-center items-center f-avenirl lh-copy methodology-how-to-learn-fast--container'>
+  <h2 class='tc lh-title'>How to Learn a New Programing Language FAST</h2>
+  <h3 class='mt2 fw1 tc'>Mastery comes from knowledge, wisdom, and experience through the 4 levels of learning</h3>
 
-  <div class='mt5 flex justify-between items-end'>
+  <div class='mt5 flex justify-between flex-row-ns flex-column items-center items-end-ns methodology-how-to-learn-fast'>
     <div class='flex flex-column items-center justify-center flex-item--same-width'>
       <div class='methodology-ape'>
         <%= render LearnElixirLandingWeb.IconView, "ape.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirm mr-auto pl2'>Unconscious Incompetence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1'>You don’t know what you don’t know</p>
+      <h4 class='bold mt3 f-avenirm mr-auto-ns center pl2 '>Unconscious Incompetence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1 mr-auto tc tl-ns'>You don’t know what you don’t know</p>
     </div>
 
     <div class='flex flex-column items-center justify-center flex-item--same-width'>
@@ -57,8 +57,8 @@
         <%= render LearnElixirLandingWeb.IconView, "semi_human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirm mr-auto pl2'>Conscious Incompetence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1'>You know what you don’t know. You can see your shortcomings and understand where you need to improve</p>
+      <h4 class='bold mt3 f-avenirm mr-auto-ns center pl2'>Conscious Incompetence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You know what you don’t know. You can see your shortcomings and understand where you need to improve</p>
     </div>
 
     <div class='flex flex-column items-center justify-center flex-item--same-width'>
@@ -66,8 +66,8 @@
         <%= render LearnElixirLandingWeb.IconView, "human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirm mr-auto pl2'>Conscious Competence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1'>You know what you know. You are starting to get the hang of things but it still takes  effort and concentration</p>
+      <h4 class='bold mt3 f-avenirm mr-auto-ns center pl2'>Conscious Competence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You know what you know. You are starting to get the hang of things but it still takes  effort and concentration</p>
     </div>
 
     <div class='flex flex-column items-center justify-center flex-item--same-width'>
@@ -75,8 +75,8 @@
         <%= render LearnElixirLandingWeb.IconView, "computer_human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirm mr-auto pl2'>Unconscious Competence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1'>You don’t know what you know  You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot</p>
+      <h4 class='bold mt3 f-avenirm mr-auto-ns center pl2'>Unconscious Competence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You don’t know what you know  You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot</p>
     </div>
   </div>
 </section>
@@ -84,7 +84,7 @@
 <section class='mt5 pt5 purple f-avenirm lh-copy'>
   <div class='tc'>
     <h2 class='f-avenirb'>Knowledge</h2>
-    <p class='db center mt4'>
+    <p class='db center mt4 tc'>
       <span class='db'>Theory, information, and facts are the cognitive resources or</span>
       <span class='db'>building blocks towards the practical understanding of a subject</span>
     </p>
@@ -244,12 +244,12 @@
   <p class='db center mt3'>To be truly great is a lifelong process. It’s possible to pioneer your path and brute force your competency over time, but a bullet train has been built if you want to smoothly speed ahead of the competition.</p>
 </section>
 
-<section class='mt5 ph3 vh-75 flex flex-column justify-center items-center bg-light-purple white f-avenirl'>
-  <h2 class='lh-title f-domine'>We only want to work with people we know we can help</h2>
-  <p class='mt4 lh-copy mxn tc'>Book a call now with Jeremy Graham to see if we’re a good fit for each other.</p>
-  <p class='lh-copy mxn tc'>
-    <span class='db'>Once we get to know you and know we can help you get to your goal, pricing options will be</span>
-    <span class='db'>presented to you and we can discuss the best steps moving forward.</span>
+<section class='mt5 ph3 vh-75 flex flex-column justify-center items-center bg-light-purple white f-avenirl bottom-purple-box methodology-bottom-box'>
+  <h2 class='tc lh-title f-domine'>We only want to work with people we know we can help</h2>
+  <p class='lh-copy mxn tc mt4'>
+    <span>Book a call now with Jeremy Graham to see if we’re a good fit for each other.</span>
+    <span>Once we get to know you and know we can help you get to your goal, pricing options will be</span>
+    <span>presented to you and we can discuss the best steps moving forward.</span>
   </p>
 
   <div class='mt4'>

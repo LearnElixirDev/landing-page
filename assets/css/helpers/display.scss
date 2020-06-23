@@ -1,0 +1,15 @@
+.dli {
+  display: list-item;
+}
+
+.dli-gt-sm {
+  @include breakpoint($gt-sm) {
+    display: list-item !important;
+  }
+}
+
+.dli-gt-xs {
+  @include breakpoint($gt-xs) {
+    display: list-item !important;
+  }
+}

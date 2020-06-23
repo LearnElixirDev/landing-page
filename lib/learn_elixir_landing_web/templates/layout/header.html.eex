@@ -9,7 +9,7 @@
     <ul class='flex f-avenirl pt3 f3'>
       <li><%= link "Home", to: "/" %></li>
       <li class='ml4'><%= link "Methodology", to: "/methodology" %></li>
-      <li class='ml4'><%= link "Dev Blog", to: "/blogs" %></li>
+      <li class='ml4'><%= link "Blog", to: "/blogs" %></li>
     </ul>
   </nav>
 </header>

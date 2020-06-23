@@ -1,4 +1,4 @@
-<section>
+<section class='pb5'>
   <h1 class='f-domine purple tc mv5'>Blogs</h1>
 
   <div class='flex justify-around item-center w-80 center card-wrapper-container'>
