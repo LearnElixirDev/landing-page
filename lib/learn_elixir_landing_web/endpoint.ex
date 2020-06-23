@@ -24,14 +24,12 @@ defmodule LearnElixirLandingWeb.Endpoint do
     plug Plug.Static,
       at: "/",
       from: :learn_elixir_landing,
-      gzip: true,
-      only: ~w(css static js vendor blog-images mstile-* robots.txt safari* site.webmanifest favicon* browser* apple* android*)
+      gzip: true
   else
     plug Plug.Static,
       at: "/",
       from: :learn_elixir_landing,
-      gzip: false,
-      only: ~w(css js vendor blog-images mstile-* robots.txt safari* site.webmanifest favicon* browser* apple* android*)
+      gzip: false
   end
 
   # Code reloading can be explicitly enabled under the

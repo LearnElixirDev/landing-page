@@ -1,10 +1,14 @@
 <section class='ph3 methodology background-gradient--reverse white center flex flex-column items-center justify-center vh-70'>
   <h2 class='f-domine'>Methodology</h2>
-  <p class='mt4 f-avenirl lh-copy mxw-xl'>We help developers earn six-figure incomes programming Elixir via</p>
-  <p class='f-avenirl lh-copy mxw-xl'>mentorship, exclusive content, and industry connections</p>
+  <p class='mt4 f-avenirl lh-copy mxw-xl ph3 tc'>
+    <span class='db-ns'>We help developers earn six-figure incomes programming Elixir via</span>
+    <span class='db-ns'>mentorship, exclusive content, and industry connections</span>
+  </p>
 
   <div class='mt5'>
-    <button class='button'>View Course</button>
+    <a class='db mt5 tl-ns tc' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/15min'});return false;">
+      <button class='button'>Start Course</button>
+    </a>
   </div>
 </section>
 
@@ -149,7 +153,7 @@
       </p>
     </div>
 
-    <div class='methodology-mobile-step-img w-40 center'>
+    <div class='methodology-mobile-step-img w-third center'>
       <%= render LearnElixirLandingWeb.IconView, "methodology-step-04.html", conn: @conn %>
     </div>
   </div>
@@ -226,7 +230,7 @@
     </div>
   </div>
 
-  <div class='methodology-mobile-step-img w-40 center'>
+  <div class='methodology-mobile-step-img w-third center'>
     <%= render LearnElixirLandingWeb.IconView, "methodology-step-04.html", conn: @conn %>
   </div>
 </section>
@@ -321,10 +325,10 @@
   </p>
 
   <div class='mt4'>
-    <button class='button'>
-      <!-- Calendly link widget begin -->
-      <a href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">Book Call</a>
-      <!-- Calendly link widget end -->
-    </button>
+    <!-- Calendly link widget begin -->
+    <a class='db mt5 tl-ns tc' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/15min'});return false;">
+      <button class='button'>Start Course</button>
+    </a>
+    <!-- Calendly link widget end -->
   </div>
 </section>

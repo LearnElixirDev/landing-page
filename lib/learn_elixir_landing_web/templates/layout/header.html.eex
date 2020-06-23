@@ -1,4 +1,4 @@
-<header class='flex justify-between items-center pl3 pr4 mt2 pb2 purple'>
+<header class='flex justify-between items-center pl3 pr4 mt2 purple main-header'>
   <div class='w5'>
     <%= link to: "/" do %>
       <%= render LearnElixirLandingWeb.LayoutView, "logo.html", conn: @conn %>

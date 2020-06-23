@@ -2,12 +2,14 @@
   <div class='w-80 home-page-main--hero-container'>
     <div class='flex flex-row-ns flex-column justify-between items-center'>
       <div>
-        <h1 class='white fw-b f-domine'>Level Up</h1>
-        <p class='mt4 f-hero white f-avenirl'>Learn Elixir is your direct route through</p>
-        <p class='mt2 f-hero white f-avenirl'>beginner, intermediate, & advanced, to</p>
-        <p class='mt2 f-hero white f-avenirl'>Elixir Mastery.</p>
+        <h1 class='white fw-b f-domine tc tl-ns'>Level Up</h1>
+        <p class='mt4 f-hero white f-avenirl tc tl-ns lh-title'>
+         <span class='db-ns'>Learn Elixir is your direct route through</span>
+         <span class='db-ns'>beginner, intermediate, & advanced, to</span>
+         <span class='db-ns'>Elixir Mastery.</span>
+       </p>
 
-        <a class='db mt5 tl-ns tc' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">
+        <a class='db mt5 tl-ns tc' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/15min'});return false;">
           <button class='button'>Start Course</button>
         </a>
       </div>
@@ -86,7 +88,7 @@
   <p class='mt4 f-avenirl'>Apply now to see if you are prepared to learn Elixir</p>
 
   <div class='mt4'>
-    <a class='db mt2' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mikaak/blah'});return false;">
+    <a class='db mt2' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/15min'});return false;">
       <button class='button'>Book Call</button>
     </a>
   </div>

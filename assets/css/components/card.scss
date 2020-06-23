@@ -8,10 +8,13 @@ $img-height: 241px;
 
 .card-link-container {
   display: block;
-
-  width: 75%;
   max-width: 390px;
   margin-top: $spacing-large;
+  width: 90%;
+
+  @include breakpoint(575px) {
+    width: 75%;
+  }
 
   @include breakpoint($gt-sm) {
     margin-top: 0;
