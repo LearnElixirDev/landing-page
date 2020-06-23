@@ -1,3 +1,8 @@
+.nav-link {
+  color: $light-purple;
+  transition: color .2s ease-in-out;
+}
+
 .nav-link-container {
   position: relative;
 

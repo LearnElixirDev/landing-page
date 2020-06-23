@@ -7,9 +7,9 @@
 
   <nav role='navigation'>
     <ul class='flex f-avenirl pt3 f3'>
-      <li><%= link "Home", to: "/" %></li>
-      <li class='ml4'><%= link "Methodology", to: "/methodology" %></li>
-      <li class='ml4'><%= link "Blog", to: "/blogs" %></li>
+      <li><%= link "Home", to: "/", class: "nav-link" %></li>
+      <li class='ml4'><%= link "Methodology", to: "/methodology", class: "nav-link" %></li>
+      <li class='ml4'><%= link "Blog", to: "/blogs", class: "nav-link" %></li>
     </ul>
   </nav>
 </header>
