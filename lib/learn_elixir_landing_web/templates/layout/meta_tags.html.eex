@@ -1,15 +1,65 @@
-<meta property='og:type' content='profile'/>
-<meta property='og:title' content='Example title'></meta>
-<meta property='og:url' content='https://exmaple.com'></meta>
-<meta property='og:site_name' content='Example'></meta>
-<meta property='og:image' content='https://example.com/assets/img/personal_image.jpg'></meta>
-<meta property='og:description' content='Example'></meta>
+<meta property='fb:app_id' content='2355026794524819'/>
 
-<meta name='description' content='Example'></meta>
-<meta name='keywords' content='exmaple'></meta>
-<meta name='author' content='Example'></meta>
-<meta name='copyright' content='Example'/>
+<meta property='og:type' content='profile'/>
+<meta property='og:title' content='Fast track your elixir career'>
+<meta property='og:url' content='https://learn-elixir.dev'>
+<meta property='og:site_name' content='Learn Elixir'>
+<meta property='og:image' content='https://learn-elixir.dev/learn-elixir-banner.png'>
+<meta property='og:description' content='We help developers master Elixir and build work-life balance into a lasting career.'>
+
+<meta name='description' content='We help developers master Elixir and build work-life balance into a lasting career.'>
+<meta name='keywords' content='education,learn,elixir,learn elixir,software,development'>
+<meta name='author' content='Mika Kalathil'>
+<meta name='copyright' content='Lure Consulting Inc. 2020'/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-<link rel='canonical' href='https://example.ca'/>
+<link rel='canonical' href='https://learn-elixir.dev'/>
 <meta name='robots' content='index,follow'/>
+
+<script type='application/ld+json'>
+  {
+    "@context": "http://schema.org",
+    "@type": "Corporation",
+    "description": "We help developers master Elixir and build work-life balance into a lasting career.",
+    "url": "https://learn-elixir.dev",
+    "name": "Learn Elixir",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://learn-elixir.dev/android-chrome-512x512.png"
+    },
+    "location": {
+      "@type": "City",
+      "name": "Vancouver, B.C."
+    }
+  }
+</script>
+
+<%# <script> %>
+<%#   { %>
+<%#     "@context": "http://schema.org", %>
+<%#     "@type": "BlogPosting", %>
+<%#     "mainEntityOfPage": { %>
+<%#       "@type": "WebPage", %>
+<%#       "@id": "https://lure.is/#{blogUrl}" %>
+<%#     }, %>
+<%#     "headline": "#{blogTitle}", %>
+<%#     "image": [ %>
+<%#       "https://lure.is/#{blogImage}", %>
+<%#      ], %>
+<%#     "datePublished": "#{blogPublishDate}", %>
+<%#     "dateModified": "#{blogPublishDate}", %>
+<%#     "author": { %>
+<%#       "@type": "Person", %>
+<%#       "name": "#{author}" %>
+<%#     }, %>
+<%#      "publisher": { %>
+<%#       "@type": "Organization", %>
+<%#       "name": "Lure", %>
+<%#       "logo": { %>
+<%#         "@type": "ImageObject", %>
+<%#         "url": `https://lure.is/#{favIcon}` %>
+<%#       } %>
+<%#     }, %>
+<%#     "description": "#{description}" %>
+<%#   } %>
+<%# </script> %>

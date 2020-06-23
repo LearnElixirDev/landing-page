@@ -19,6 +19,9 @@ defmodule LearnElixirLandingWeb.Router do
     get "/", PageController, :index
     get "/methodology", PageController, :methodology
 
+    get "/uses-of-elixir-task-module", BlogController, :redirect_to_tasks
+    get "/dangers-of-genservers", BlogController, :redirect_to_genservers
+
     resources "/blogs", BlogController, only: [:index, :show]
   end
 

@@ -35,5 +35,13 @@ defmodule LearnElixirLandingWeb.BlogController do
 
     render(conn, "show.html", blog_name: blog_name, blog_details: @blog_details_map[blog_name])
   end
+
+  def redirect_to_genservers(conn, _params) do
+    redirect(conn, to: "/blogs/dangers-of-genservers")
+  end
+
+  def redirect_to_tasks(conn, _params) do
+    redirect(conn, to: "/blogs/uses-of-elixir-task-module")
+  end
 end
 
