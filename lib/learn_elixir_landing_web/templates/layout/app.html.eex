@@ -13,6 +13,10 @@
     <link href='https://fonts.googleapis.com/css2?family=Domine&display=swap&text=Wehelpdevelopersearnsix-figureincomesprogrammingElixirviamentorship,exclusivecontent,andindustryconnections' rel='stylesheet'>
 
     <link rel='stylesheet' href='<%= Routes.static_path(@conn, "/css/app.css") %>'/>
+
+    <%= if LearnElixirLanding.Config.tracking_tags_enabled? do %>
+      <%= render LearnElixirLandingWeb.LayoutView, "tracking_header.html", conn: @conn %>
+    <% end %>
   </head>
   <body class='flex flex-column'>
     <%= render LearnElixirLandingWeb.LayoutView, "header.html", conn: @conn %>
@@ -26,6 +30,10 @@
     <%= render LearnElixirLandingWeb.LayoutView, "footer.html", conn: @conn %>
 
     <script defer type='text/javascript' src='<%= Routes.static_path(@conn, "/js/app.js") %>'></script>
+
+    <%= if LearnElixirLanding.Config.tracking_tags_enabled? do %>
+      <%= render LearnElixirLandingWeb.LayoutView, "tracking_body.html", conn: @conn %>
+    <% end %>
 
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>

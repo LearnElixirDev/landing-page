@@ -17,4 +17,6 @@ config :learn_elixir_landing, LearnElixirLandingWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
+config :learn_elixir_landing, :tracking_tags_enabled?, true
+
 import_config "prod.secret.exs"

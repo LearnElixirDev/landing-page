@@ -5,6 +5,7 @@
 <meta property='og:url' content='https://learn-elixir.dev'>
 <meta property='og:site_name' content='Learn Elixir'>
 <meta property='og:image' content='https://learn-elixir.dev/learn-elixir-banner.png'>
+<meta property='og:image:alt' content='Learn Elixir Banner'>
 <meta property='og:description' content='We help developers master Elixir and build work-life balance into a lasting career.'>
 
 <meta name='description' content='We help developers master Elixir and build work-life balance into a lasting career.'>
