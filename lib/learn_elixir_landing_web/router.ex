@@ -17,6 +17,7 @@ defmodule LearnElixirLandingWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/home", PageController, :redirect_to_index
     get "/methodology", PageController, :methodology
 
     get "/uses-of-elixir-task-module", BlogController, :redirect_to_tasks

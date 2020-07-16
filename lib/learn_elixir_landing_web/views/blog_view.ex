@@ -46,7 +46,7 @@ defmodule LearnElixirLandingWeb.BlogView do
   end
 
   def title("show.html", %{blog_name: blog_name}) do
-    "Learn Elixir | Blog - #{title_case(blog_name)}"
+    "Learn Elixir | #{title_case(blog_name)}"
   end
 
   defp title_case(str) do

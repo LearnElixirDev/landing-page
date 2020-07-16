@@ -8,4 +8,8 @@ defmodule LearnElixirLandingWeb.PageController do
   def methodology(conn, _params) do
     render(conn, "methodology.html")
   end
+
+  def redirect_to_index(conn, _params) do
+    redirect(conn, to: "/")
+  end
 end
