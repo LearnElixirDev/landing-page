@@ -21,7 +21,6 @@ $img-height: 241px;
     width: 30%;
     min-width: 250px;
     max-width: 365px;
-    height: $height;
   }
 }
 
@@ -33,6 +32,6 @@ $img-height: 241px;
   }
 
   img + div {
-    height: $height - $img-height;
+    min-height: $height - $img-height;
   }
 }

@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <aside class="f6 lh-copy measure mt2 mid-gray f-avenirl">
+      <aside class="f6 pb2 lh-copy measure mt2 mid-gray f-avenirl">
         <%= @description %>
       </aside>
 
