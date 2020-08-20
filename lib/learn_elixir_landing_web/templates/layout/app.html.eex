@@ -1,49 +1,5 @@
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-    <title><%= @view_module.title(@view_template, assigns) %></title>
-    <meta property='og:title' content='<%= @view_module.og_title(@view_template, assigns) %>'>
-    <meta property='og:description' content='<%= @view_module.description(@view_template, assigns) %>'>
-
-    <meta name='description' content='<%= @view_module.description(@view_template, assigns) %>'>
-
-    <script type='application/ld+json'>
-      <%= @view_module.ld_schema(@view_template, assigns) %>
-    </script>
-
-    <%= render LearnElixirLandingWeb.LayoutView, "meta_tags.html", conn: @conn %>
-    <%= render LearnElixirLandingWeb.LayoutView, "fav_icon_meta.html", conn: @conn %>
-
-    <link href='https://fonts.googleapis.com/css2?family=Domine:wght@400&display=swap&text=BMTSLUWvakeurvythodlgwnipcs' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css2?family=Domine&display=swap&text=Wehelpdevelopersearnsix-figureincomesprogrammingElixirviamentorship,exclusivecontent,andindustryconnections' rel='stylesheet'>
-
-    <link rel='stylesheet' href='<%= Routes.static_path(@conn, "/css/app.css") %>'/>
-
-    <%= if LearnElixirLanding.Config.tracking_tags_enabled? do %>
-      <%= render LearnElixirLandingWeb.LayoutView, "tracking_header.html", conn: @conn %>
-    <% end %>
-  </head>
-  <body class='flex flex-column'>
-    <%= render LearnElixirLandingWeb.LayoutView, "header.html", conn: @conn %>
-
-    <main role='main' class='flex-item--fill-max'>
-      <p class='alert alert-info' role='alert'><%= get_flash(@conn, :info) %></p>
-      <p class='alert alert-danger' role='alert'><%= get_flash(@conn, :error) %></p>
-      <%= @inner_content %>
-    </main>
-
-    <%= render LearnElixirLandingWeb.LayoutView, "footer.html", conn: @conn %>
-
-    <script defer type='text/javascript' src='<%= Routes.static_path(@conn, "/js/app.js") %>'></script>
-
-    <%= if LearnElixirLanding.Config.tracking_tags_enabled? do %>
-      <%= render LearnElixirLandingWeb.LayoutView, "tracking_body.html", conn: @conn %>
-    <% end %>
-
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-  </body>
-</html>
+<main role='main' class='flex-item--fill-max'>
+  <p class='alert alert-info' role='alert'><%= get_flash(@conn, :info) %></p>
+  <p class='alert alert-danger' role='alert'><%= get_flash(@conn, :error) %></p>
+  <%= @inner_content %>
+</main>
