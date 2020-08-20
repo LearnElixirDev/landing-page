@@ -82,6 +82,56 @@
   </div>
 </section>
 
+<section class='mt5 flex flex-column items-center w-100 vh-75 justify-center justify-start-ns'>
+  <h2 class='f-domine'>Our Team</h1>
+
+  <div class='flex w-75'>
+    <div class='relative mt5 w-third'>
+      <article class='br2 ba dark-gray b--black-10 mb5 team-card'>
+        <img src='' class='db w-60 center br2 br--top' alt'Photo Mika'>
+
+        <div class='pa2 ph3-ns pb3-ns flex flex-column'>
+          <div class='dt w-100 mt1'>
+            <h4>Mika Kalathil</h4>
+          </div>
+
+          <aside class='f6 pb2 lh-copy measure mt2 mid-gray f-avenirl'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere volutpat arcu, a fringilla justo pellentesque et.
+          </aside>
+
+          <a class='dib' href='http://ca.linkedin.com/in/mikakalathil'>
+            <div class='w2 w1-ns'>
+              <%= render LearnElixirLandingWeb.IconView, "linkedin.html", conn: @conn %>
+            </div>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class='relative mt5 w-third'>
+      <article class='br2 ba dark-gray b--black-10 mb5 team-card'>
+        <img src="" class='db w-60 center br2 br--top' alt='Photo Jerry'>
+
+        <div class='pa2 ph3-ns pb3-ns flex flex-column'>
+          <div class='dt w-100 mt1'>
+            <h4>Jerry Graham</h4>
+          </div>
+
+          <aside class='f6 pb2 lh-copy measure mt2 mid-gray f-avenirl'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere volutpat arcu, a fringilla justo pellentesque et.
+          </aside>
+
+          <a class='dib' href='https://www.linkedin.com/in/jeremy-thomas-graham/'>
+            <div class='w2 w1-ns'>
+              <%= render LearnElixirLandingWeb.IconView, "linkedin.html", conn: @conn %>
+            </div>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class='vh-75 flex flex-column justify-center items-center bg-light-purple white'>
   <h2 class='f-domine'>Book Call</h2>
 
