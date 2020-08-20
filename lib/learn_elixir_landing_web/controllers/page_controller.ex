@@ -9,6 +9,10 @@ defmodule LearnElixirLandingWeb.PageController do
     render(conn, "methodology.html")
   end
 
+  def contact(conn, _params) do
+    render(conn, "contact.html")
+  end
+
   def course_content(conn, _params) do
     render(conn, "course_content.html")
   end

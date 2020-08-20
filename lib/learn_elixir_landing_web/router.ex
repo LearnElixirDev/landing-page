@@ -4,7 +4,8 @@ defmodule LearnElixirLandingWeb.Router do
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
-    plug :fetch_flash
+    plug :fetch_live_flash
+    plug :put_root_layout, {LearnElixirLandingWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
@@ -20,6 +21,9 @@ defmodule LearnElixirLandingWeb.Router do
     get "/home", PageController, :redirect_to_index
     get "/methodology", PageController, :methodology
     get "/course-content", PageController, :course_content
+    get "/contact", PageController, :contact
+
+    live "/live/contact-message", LearnElixirLandingWeb.ContactMailerLive
 
     get "/uses-of-elixir-task-module", BlogController, :redirect_to_tasks
     get "/dangers-of-genservers", BlogController, :redirect_to_genservers
