@@ -43,7 +43,8 @@ defmodule LearnElixirLanding.MixProject do
     [
       {:phoenix, "~> 1.5.1"},
       {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_view, "~> 0.12.0"},
+      {:phoenix_ecto, "~> 4.1"},
+      {:phoenix_live_view, "~> 0.13.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_dashboard, "~> 0.2.0"},
       {:telemetry_metrics, "~> 0.4"},
@@ -51,7 +52,9 @@ defmodule LearnElixirLanding.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:earmark, "~> 1.4"}
+      {:earmark, "~> 1.4"},
+
+      {:ecto_sql, "~> 3.4"}
     ]
   end
 

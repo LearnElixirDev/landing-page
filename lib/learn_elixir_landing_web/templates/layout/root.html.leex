@@ -28,6 +28,8 @@
     <% end %>
 
     <%= csrf_meta_tag() %>
+
+    <script type='text/javascript' src='<%= Routes.static_path(@conn, "/js/app.js") %>'></script>
   </head>
   <body class='flex flex-column'>
     <%= render LearnElixirLandingWeb.LayoutView, "header.html", conn: @conn %>
@@ -35,8 +37,6 @@
     <%= @inner_content %>
 
     <%= render LearnElixirLandingWeb.LayoutView, "footer.html", conn: @conn %>
-
-    <script defer type='text/javascript' src='<%= Routes.static_path(@conn, "/js/app.js") %>'></script>
 
     <%= if LearnElixirLanding.Config.tracking_tags_enabled? do %>
       <%= render LearnElixirLandingWeb.LayoutView, "tracking_body.html", conn: @conn %>
