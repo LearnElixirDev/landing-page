@@ -1,2 +1,8 @@
 <h2>Contact</h2>
+
 <%= live_render(@conn, LearnElixirLandingWeb.ContactMailerLive) %>
+
+
+<script>
+  window.connectToLiveSocket()
+</script>

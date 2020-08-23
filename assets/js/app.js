@@ -16,5 +16,6 @@ import 'prismjs/themes/prism.css'
 import 'phoenix_html'
 import Prism from 'prismjs'
 
+import {liveSocket} from './live-view'
 
-Prism.highlightAll()
+window.connectToLiveSocket = () => liveSocket.connect()
