@@ -1,69 +1,31 @@
 defmodule LearnElixirLandingWeb.LayoutView do
   use LearnElixirLandingWeb, :view
 
-  def title(title, _) when title in ["root.html", "index.htmls"] do
-    "Learn Elixir"
+  def title(conn, assigns) do
+    view = conn.private[:phoenix_view]
+    template = conn.private[:phoenix_template]
+
+    view.title(template, assigns)
   end
 
-  def title("methodology.html", _) do
-    "Learn Elixir | Methodology"
+  def og_title(conn, assigns) do
+    view = conn.private[:phoenix_view]
+    template = conn.private[:phoenix_template]
+
+    view.og_title(template, assigns)
   end
 
-  def title("course_content.html", _) do
-    "Learn Elixir | Course Content"
+  def description(conn, assigns) do
+    view = conn.private[:phoenix_view]
+    template = conn.private[:phoenix_template]
+
+    view.description(template, assigns)
   end
 
-  def title("contact.html", _) do
-    "Learn Elixir | Contact"
-  end
+  def ld_schema(conn, assigns) do
+    view = conn.private[:phoenix_view]
+    template = conn.private[:phoenix_template]
 
-  def og_title(title, _) when title in ["root.html", "index.htmls"] do
-    "Fast track your Elixir learning experience"
-  end
-
-  def og_title("methodology.html", _) do
-    "Methodology"
-  end
-
-  def og_title("course_content.html", _) do
-    "Course Content"
-  end
-
-  def og_title("contact.html", _) do
-    "Contact Us"
-  end
-
-  def description("methodology.html", _) do
-    "The methodology we use to help developers master Elixir."
-  end
-
-  def description("course_content.html", _) do
-    "The content of the course"
-  end
-
-  def description(_, _) do
-    "We help developers master Elixir and build work-life balance into a lasting career."
-  end
-
-  def ld_schema(_, _) do
-    Phoenix.HTML.raw("""
-    {
-      "@context": "http://schema.org",
-      "@type": "Corporation",
-      "description": "We help developers master Elixir and build work-life balance into a lasting career.",
-      "url": "https://learn-elixir.dev",
-      "name": "Learn Elixir",
-
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://learn-elixir.dev/android-chrome-512x512.png"
-      },
-
-      "location": {
-        "@type": "City",
-        "name": "Vancouver, B.C."
-      }
-    }
-    """)
+    view.ld_schema(template, assigns)
   end
 end

@@ -5,14 +5,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
 
-    <title><%= @view_module.title(@view_template, assigns) %></title>
-    <meta property='og:title' content='<%= @view_module.og_title(@view_template, assigns) %>'>
-    <meta property='og:description' content='<%= @view_module.description(@view_template, assigns) %>'>
+    <title><%= @view_module.title(@conn, assigns) %></title>
+    <meta property='og:title' content='<%= @view_module.og_title(@conn, assigns) %>'>
+    <meta property='og:description' content='<%= @view_module.description(@conn, assigns) %>'>
 
-    <meta name='description' content='<%= @view_module.description(@view_template, assigns) %>'>
+    <meta name='description' content='<%= @view_module.description(@conn, assigns) %>'>
 
     <script type='application/ld+json'>
-      <%= @view_module.ld_schema(@view_template, assigns) %>
+      <%= @view_module.ld_schema(@conn, assigns) %>
     </script>
 
     <%= render LearnElixirLandingWeb.LayoutView, "meta_tags.html", conn: @conn %>
