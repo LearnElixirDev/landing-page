@@ -9,32 +9,42 @@
 
 <url>
   <loc>https://learn-elixir.dev/</loc>
-  <lastmod>2020-06-23T20:55:00+00:00</lastmod>
+  <lastmod>2020-08-23T21:30:06+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://learn-elixir.dev/methodology</loc>
-  <lastmod>2020-06-23T20:55:00+00:00</lastmod>
+  <lastmod>2020-08-23T21:30:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://learn-elixir.dev/blogs</loc>
-  <lastmod>2020-06-23T20:55:00+00:00</lastmod>
+  <lastmod>2020-08-23T21:30:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://learn-elixir.dev/course-content</loc>
+  <lastmod>2020-08-23T21:30:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://learn-elixir.dev/contact</loc>
+  <lastmod>2020-08-23T21:30:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://learn-elixir.dev/blogs/dangers-of-genservers</loc>
-  <lastmod>2020-06-23T20:55:00+00:00</lastmod>
+  <lastmod>2020-08-23T21:30:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://learn-elixir.dev/blogs/uses-of-elixir-task-module</loc>
-  <lastmod>2020-06-23T20:55:00+00:00</lastmod>
+  <lastmod>2020-08-23T21:30:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://learn-elixir.dev/blogs/</loc>
-  <lastmod>2020-06-23T20:55:00+00:00</lastmod>
+  <lastmod>2020-08-23T21:30:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
