@@ -82,47 +82,68 @@
   </div>
 </section>
 
-<section class='mt5 flex flex-column items-center w-100 vh-75 justify-center justify-start-ns'>
+<section class='mt5 flex flex-column items-center w-100 justify-center justify-start-ns'>
   <h2 class='f-domine'>Our Team</h1>
 
-  <div class='flex w-75'>
-    <div class='relative mt5 w-third'>
-      <article class='br2 ba dark-gray b--black-10 mb5 team-card'>
-        <img src='' class='db w-60 center br2 br--top' alt'Photo Mika'>
+  <div class='ph2 flex mb5 f-avenirl flex justify-around items-center team-card-container'>
+    <div class='relative mt5 br3 team-card'>
+      <article class='pa3 pa4-ns dark-gray'>
+        <img src='<%= Routes.static_path(@conn, "/team-members-mika.jpg") %>' class='db w-60 center br-circle' alt'Photo Mika'>
 
-        <div class='pa2 ph3-ns pb3-ns flex flex-column'>
-          <div class='dt w-100 mt1'>
-            <h4>Mika Kalathil</h4>
+        <div class='flex flex-column'>
+          <div class='dt w-100 mt4'>
+            <h3 class='f-avenirm tc'>Mika Kalathil</h4>
           </div>
 
-          <aside class='f6 pb2 lh-copy measure mt2 mid-gray f-avenirl'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere volutpat arcu, a fringilla justo pellentesque et.
+          <aside class='pb2 mt3 lh-copy measure mt2 mid-gray f-avenirl'>
+            <p class='f5 f6-ns'>
+              Mika has been a member of the Elixir community since the beginning and often learned directly from the core team when documentation was sparse.
+            </p>
+            <p class='f5 f6-ns'>
+              After working as a senior Elixir developer for several years Mika began to notice a repetition of fundamental flaws or gaps of knowledge when reviewing others’ code for deployment, hiring, or consulting purposes.
+            </p>
+            <p class='f5 f6-ns'>
+              Identifying an obvious need in the community, he decided to create Learn Elixir and serve developers throughout their careers in a manner he wished he had.
+            </p>
           </aside>
 
-          <a class='dib' href='http://ca.linkedin.com/in/mikakalathil'>
-            <div class='w2 w1-ns'>
-              <%= render LearnElixirLandingWeb.IconView, "linkedin.html", conn: @conn %>
-            </div>
-          </a>
+          <div class='flex items-center'>
+            <a class='dib' href='https://ca.linkedin.com/in/mikakalathil'>
+              <div class='w2'>
+                <%= render LearnElixirLandingWeb.IconView, "linkedin.html", conn: @conn %>
+              </div>
+            </a>
+
+            <a class='dib ml3' href='https://github.com/mikaak'>
+              <div class='w2'>
+                <%= render LearnElixirLandingWeb.IconView, "github.html", conn: @conn %>
+              </div>
+            </a>
+          </div>
         </div>
       </article>
     </div>
 
-    <div class='relative mt5 w-third'>
-      <article class='br2 ba dark-gray b--black-10 mb5 team-card'>
-        <img src="" class='db w-60 center br2 br--top' alt='Photo Jerry'>
+    <div class='relative ml3 mt5 br3 team-card'>
+      <article class='pa3 pa4-ns team-card'>
+        <img src='<%= Routes.static_path(@conn, "/team-members-jerry.jpg") %>' class='db w-60 center br-circle' alt='Photo Jerry'>
 
-        <div class='pa2 ph3-ns pb3-ns flex flex-column'>
-          <div class='dt w-100 mt1'>
-            <h4>Jerry Graham</h4>
+        <div class='flex flex-column'>
+          <div class='dt w-100 mt4'>
+            <h3 class='f-avenirm tc'>Jerry Graham</h4>
           </div>
 
-          <aside class='f6 pb2 lh-copy measure mt2 mid-gray f-avenirl'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere volutpat arcu, a fringilla justo pellentesque et.
+          <aside class='f6 pb2 mt3 lh-copy measure mt2 mid-gray f-avenirl'>
+            <p class='f5 f6-ns'>
+              Jeremy has worked in sales and business development all his life and is likely to be the first person you talk to at Learn Elixir. He’s noticed the rise in popularity and appreciation for Elixir over the years and is thrilled to be contributing to the community in his own way.
+            </p>
+            <p class='f5 f6-ns'>
+              As the language transitions from niche to mainstream, he is determined to do whatever it takes to help your career while creating a centralized standard of excellence companies can trust.
+            </p>
           </aside>
 
           <a class='dib' href='https://www.linkedin.com/in/jeremy-thomas-graham/'>
-            <div class='w2 w1-ns'>
+            <div class='w2'>
               <%= render LearnElixirLandingWeb.IconView, "linkedin.html", conn: @conn %>
             </div>
           </a>
