@@ -48,3 +48,11 @@
     outline: 0;
   }
 }
+
+.button,
+.button-small {
+  &.button-purple {
+    background-color: $light-purple;
+    color: $white;
+  }
+}

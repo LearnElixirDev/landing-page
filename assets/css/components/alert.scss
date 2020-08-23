@@ -1,0 +1,32 @@
+.alert-container {
+  display: flex;
+  margin-bottom: $spacing-large;
+
+  .alert {
+    border-radius: 0.3em;
+    min-width: 350px;
+    max-width: 800px;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid $light-gray;
+    padding: {
+      left: $spacing-medium;
+      right: $spacing-medium;
+      top: $spacing-medium;
+      bottom: $spacing-medium;
+    };
+  }
+
+  .alert.alert-success {
+    background-color: $light-green;
+  }
+
+  .alert.alert-error {
+    background-color: $light-red;
+  }
+
+  .alert.alert-info {
+    background-color: $light-gray;
+  }
+}

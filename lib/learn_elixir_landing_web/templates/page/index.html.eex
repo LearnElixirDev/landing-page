@@ -82,10 +82,10 @@
   </div>
 </section>
 
-<section class='mt5 flex flex-column items-center w-100 justify-center justify-start-ns'>
+<section class='mt3 flex flex-column items-center w-100 justify-center justify-start-ns'>
   <h2 class='f-domine'>Our Team</h1>
 
-  <div class='ph2 flex mb5 f-avenirl flex justify-around items-center team-card-container'>
+  <div class='mt4 ph2 pb5 flex mb5 f-avenirl flex justify-around items-center team-card-container'>
     <div class='relative mt5 br3 team-card'>
       <article class='pa3 pa4-ns dark-gray'>
         <img src='<%= Routes.static_path(@conn, "/team-members-mika.jpg") %>' class='db w-60 center br-circle' alt'Photo Mika'>

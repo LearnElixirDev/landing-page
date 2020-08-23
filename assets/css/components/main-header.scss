@@ -1,12 +1,12 @@
 .main-header {
-  min-height: 110px;
+  min-height: 7.857142857rem;
   flex-direction: column;
   padding-bottom: $spacing-medium;
   padding-left: $spacing-medium;
   padding-right: $spacing-medium;
 
   @include breakpoint(480px) {
-    min-height: 70px;
+    min-height: 5rem;
     flex-direction: row;
     padding-bottom: $spacing-small;
     padding-left: $spacing-medium;

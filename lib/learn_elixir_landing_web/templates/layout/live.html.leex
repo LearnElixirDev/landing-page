@@ -1,11 +1,29 @@
-<main role="main" class="container">
-  <p class="alert alert-info" role="alert"
-    phx-click="lv:clear-flash"
-    phx-value-key="info"><%= live_flash(@flash, :info) %></p>
+<main role='main' class="container">
+  <% info_flash = live_flash(@flash, :info)  %>
+  <% success_flash = live_flash(@flash, :success)  %>
+  <% error_flash = live_flash(@flash, :error)  %>
 
-  <p class="alert alert-danger" role="alert"
-    phx-click="lv:clear-flash"
-    phx-value-key="error"><%= live_flash(@flash, :error) %></p>
+  <%= if info_flash || success_flash || error_flash do %>
+    <div class='alert-container f-avenirm'>
+      <%= if info_flash do %>
+        <p class='alert alert-info' role='alert'
+          phx-click='lv:clear-flash'
+          phx-value-key='info'><%= info_flash %></p>
+      <% end %>
+
+      <%= if success_flash do %>
+        <p class='alert alert-success' role='alert'
+          phx-click='lv:clear-flash'
+          phx-value-key='info'><%= success_flash %></p>
+      <% end %>
+
+      <%= if error_flash do %>
+        <p class='alert alert-danger' role='alert'
+          phx-click='lv:clear-flash'
+          phx-value-key='error'><%= error_flash %></p>
+      <% end %>
+    </div>
+  <% end %>
 
   <%= @inner_content %>
 </main>

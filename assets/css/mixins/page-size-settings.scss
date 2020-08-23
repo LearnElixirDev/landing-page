@@ -1,5 +1,10 @@
-$vert-size: 3.75rem; // 60px * 16
+$header-height-sm: 7.857142857rem;
+$header-height: 5rem;
 
 @mixin page-size-settings {
-  min-height: calc(100vh - #{$header-height});
+  min-height: calc(100vh - #{$header-height-sm});
+
+  @include breakpoint(480px) {
+    min-height: calc(100vh - #{$header-height});
+  }
 }

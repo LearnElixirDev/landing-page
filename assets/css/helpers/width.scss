@@ -1,3 +1,13 @@
+.w-unset {
+  width: unset;
+}
+
+.w-unset-ns {
+  @include breakpoint($gt-xs) {
+    width: unset;
+  }
+}
+
 .w-49 {
   width: 49%;
 }

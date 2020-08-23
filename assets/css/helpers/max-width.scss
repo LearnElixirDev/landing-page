@@ -2,6 +2,16 @@
   max-width: none;
 }
 
+.mxw-sm {
+  max-width: 22.25rem;
+}
+
+.mxw-sm-ns {
+  @include breakpoint($gt-sm) {
+    max-width: 22.25rem;
+  }
+}
+
 .mxw-m {
   max-width: 28.5rem;
 }
