@@ -47,12 +47,19 @@ defmodule LearnElixirLanding.MixProject do
       {:phoenix_live_view, "~> 0.13.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_dashboard, "~> 0.2.0"},
+
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~> 0.4"},
+
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
+
       {:plug_cowboy, "~> 2.0"},
+
+      {:gen_smtp, "~> 0.15"},
+      {:hackney, "~> 1.9"},
       {:earmark, "~> 1.4"},
+      {:swoosh, "~> 1.0"},
 
       {:ecto_sql, "~> 3.4"}
     ]

@@ -1,68 +1,25 @@
-$space-between-padding: 10px;
-$double-column-form-group-width: ($max-form-control-width / 2) - ($space-between-padding / 2);
-$double-form-column-width: $max-form-control-width - 20px;
-
-.form--centered .mat-form-field-wrapper {
-  margin: 0 auto;
+.form, .form--stacked {
+  font-family: avenir-medium, sans-serif;
 }
 
-.form--full-width {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  .mat-form-field {
+.form--stacked {
+  .form-group label,
+  .form-group input,
+  .form-group textarea {
     width: 100%;
   }
-}
 
-.form--extra-spacing .mat-form-field-wrapper {
-  padding-bottom: 3rem;
-}
-
-.form_button-container {
-  width: 100%;
-  max-width: $max-form-control-width;
-}
-
-.form--double-column {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: ($double-form-column-width * 2) + $space-between-padding;
-
-  .mat-form-field {
-    flex-basis: $double-form-column-width;
-    width: $double-form-column-width;
-    max-width: $double-form-column-width;
+  .form-group input,
+  .form-group textarea {
+    margin-top: $spacing-extra-small;
   }
 
-  .form_button-container {
-    max-width: 100%;
-    align-items: flex-start;
+  .form-group:not(:first-of-type) {
+    margin-top: $spacing-medium;
   }
 
-  .form_button-container button {
-    width: $double-form-column-width;
-  }
-}
-
-
-.form--double-column .form-group--double-column .mat-form-field  {
-  width: $max-form-control-width;
-  max-width: $max-form-control-width;
-}
-
-@include breakpoint($gt-xs) {
-  .form-group--double-column,
-  .form--double-column {
-      .mat-form-field:nth-of-type(even) {
-        margin-left: $space-between-padding;
-    }
-  }
-
-  .form-group--double-column .mat-form-field {
-      width: $double-column-form-group-width;
-      max-width: $double-column-form-group-width;
+  .form-button  {
+    text-align: center;
+    margin-top: $spacing-medium;
   }
 }

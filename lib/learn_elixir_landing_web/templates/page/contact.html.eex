@@ -1,6 +1,8 @@
-<h2>Contact</h2>
+<h2 class='tc f-avenirm'>Contact</h2>
 
-<%= live_render(@conn, LearnElixirLandingWeb.ContactMailerLive) %>
+<div>
+  <%= live_render(@conn, LearnElixirLandingWeb.ContactMailerLive) %>
+</div>
 
 
 <script>

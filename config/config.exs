@@ -25,6 +25,9 @@ config :phoenix, :json_library, Jason
 
 config :learn_elixir_landing, :tracking_tags_enabled?, false
 
+config :learn_elixir_landing, LearnElixirLanding.Mailer,
+  adapter: Swoosh.Adapters.Local
+
 config :learn_elixir_landing, :blog_details, %{
   "dangers-of-genservers" => %{
     title: "The Dangers of GenServers in Elixir",

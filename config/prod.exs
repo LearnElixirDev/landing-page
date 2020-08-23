@@ -19,4 +19,8 @@ config :logger, level: :info
 
 config :learn_elixir_landing, :tracking_tags_enabled?, true
 
+config :learn_elixir_landing, LearnElixirLanding.Mailer,
+  adapter: Swoosh.Adapters.AmazonSES
+
+
 import_config "prod.secret.exs"

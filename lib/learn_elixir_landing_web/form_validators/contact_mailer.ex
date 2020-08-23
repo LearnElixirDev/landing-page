@@ -1,6 +1,8 @@
 defmodule LearnElixirLandingWeb.FormValidators.ContactMailer do
   use LearnElixirLanding, :schema
 
+  @behaviour LearnElixirLandingWeb.FormValidators
+
   alias LearnElixirLandingWeb.FormValidators.ContactMailer
 
   embedded_schema do
