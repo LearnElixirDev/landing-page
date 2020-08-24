@@ -28,6 +28,9 @@ defmodule LearnElixirLandingWeb.Router do
     get "/uses-of-elixir-task-module", BlogController, :redirect_to_tasks
     get "/dangers-of-genservers", BlogController, :redirect_to_genservers
 
+    get "/terms-and-conditions", PageController, :terms_and_conditions
+    get "/privacy-policy", PageController, :privacy_policy
+
     resources "/blogs", BlogController, only: [:index, :show]
   end
 

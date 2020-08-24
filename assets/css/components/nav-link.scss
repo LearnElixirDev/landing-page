@@ -1,6 +1,14 @@
 .nav-link {
   color: $light-purple;
-  transition: color .2s ease-in-out;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+    color: darken($light-purple, 50%);
+  }
+
+  &:active {
+    color: lighten($light-purple, 30%);
+  }
 }
 
 .nav-link-container {

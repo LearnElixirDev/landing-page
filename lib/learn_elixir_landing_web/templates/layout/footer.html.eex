@@ -5,9 +5,18 @@
 
   <nav role='navigation'>
     <ul class='flex f3'>
-      <li><%= link "Home", to: "/" %></li>
-      <li class='ml4'><%= link "Course Content", to: "/course-content", class: "nav-link" %></li>
-      <li class='ml4'><%= link "Contact", to: "/contact" %></li>
+      <li class='ml4'>
+        <%= link "Course Content", to: "/course-content", class: "nav-link" %>
+      </li>
+
+      <li class='ml4'>
+        <%= link "Contact", to: "/contact", class: "nav-link" %>
+      </li>
+
+      <li class='ml4'>
+        <%= link "Privacy", to: "/privacy-policy", class: "nav-link" %>
+      </li>
+
       <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
         <li class='ml4 dn dli-gt-sm'><%= link "Live Dashboard", to: Routes.live_dashboard_path(@conn, :home), class: "nav-link" %></li>
       <% end %>

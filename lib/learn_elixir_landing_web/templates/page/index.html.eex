@@ -50,7 +50,7 @@
 <section class='pv6 purple w-80 center lh-copy home-page-info tc tl-ns'>
   <div class='flex flex-column-reverse flex-row-ns justify-between items-center'>
     <div class='mt4 mt0-ns'>
-      <h4 class='f-avenirh'>Exclusive Curated Content</h4>
+      <h3 class='f-avenirh'>Exclusive Curated Content</h3>
       <p class='f-avenirm mxw-m mt2'>Everything you need to know to become a talented Elixir developer.</p>
     </div>
 
@@ -65,14 +65,14 @@
     </div>
 
     <div class='mt3 mt0-ns ml5-ns'>
-      <h4 class='f-avenirh'>Mentorship</h4>
+      <h3 class='f-avenirh'>Mentorship</h3>
       <p class='f-avenirm mxw-m mt2'>Connect with experienced mentors to clarify content & aid in real-world problem solving.</p>
     </div>
   </div>
 
   <div class='flex flex-column-reverse flex-row-ns justify-between items-center mt6'>
     <div  class='mt3 mt0-ns'>
-      <h4 class='f-avenirh'>Hiring Partners</h4>
+      <h3 class='f-avenirh'>Hiring Partners</h3>
       <p class='f-avenirm mxw-m mt2'>Introductions, recommendations, & suggestions to stand out as the obvious choice.</p>
     </div>
 
@@ -83,7 +83,7 @@
 </section>
 
 <section class='mt3 flex flex-column items-center w-100 justify-center justify-start-ns'>
-  <h2 class='f-domine'>Our Team</h1>
+  <h2 class='f-domine purple'>Our Team</h1>
 
   <div class='mt4 ph2 pb5 flex mb5 f-avenirl flex justify-around items-center team-card-container'>
     <div class='relative mt5 br3 team-card'>
@@ -92,7 +92,7 @@
 
         <div class='flex flex-column'>
           <div class='dt w-100 mt4'>
-            <h3 class='f-avenirm tc'>Mika Kalathil</h4>
+            <h3 class='f-avenirm tc'>Mika Kalathil</h3>
           </div>
 
           <aside class='pb2 mt3 lh-copy measure mt2 mid-gray f-avenirl'>
@@ -130,7 +130,7 @@
 
         <div class='flex flex-column'>
           <div class='dt w-100 mt4'>
-            <h3 class='f-avenirm tc'>Jerry Graham</h4>
+            <h3 class='f-avenirm tc'>Jerry Graham</h3>
           </div>
 
           <aside class='f6 pb2 mt3 lh-copy measure mt2 mid-gray f-avenirl'>

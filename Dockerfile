@@ -24,7 +24,7 @@ COPY ./assets assets
 # Install Deps and Release
 RUN mkdir -p priv/static && npm run deploy --prefix assets/ && mix phx.digest && rm -rf deps/*/.git && mix release
 
-FROM mikaak/elixir:1.10-alpine
+FROM alpine
 
 WORKDIR /root
 COPY --from=builder /home/_build/prod/learn_elixir_landing-0.1.0.tar.gz ./

@@ -17,6 +17,14 @@ defmodule LearnElixirLandingWeb.PageView do
     "Learn Elixir | Contact"
   end
 
+  def title("terms_and_conditions.html", _) do
+    "Learn Elixir | Terms & Conditions"
+  end
+
+  def title("privacy_policy.html", _) do
+    "Learn Elixir | Privacy Policy"
+  end
+
   def og_title("index.html", _) do
     "Fast track your Elixir learning experience"
   end
@@ -31,6 +39,14 @@ defmodule LearnElixirLandingWeb.PageView do
 
   def og_title("contact.html", _) do
     "Contact Us"
+  end
+
+  def og_title("terms_and_conditions.html", _) do
+    "Terms & Conditions"
+  end
+
+  def og_title("privacy_policy.html", _) do
+    "Privacy Policy"
   end
 
   def description("methodology.html", _) do

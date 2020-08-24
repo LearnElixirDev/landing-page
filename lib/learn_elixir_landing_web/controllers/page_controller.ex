@@ -20,4 +20,12 @@ defmodule LearnElixirLandingWeb.PageController do
   def redirect_to_index(conn, _params) do
     redirect(conn, to: "/")
   end
+
+  def privacy_policy(conn, _params) do
+    render(conn, "privacy_policy.html")
+  end
+
+  def terms_and_conditions(conn, _params) do
+    render(conn, "terms_and_conditions.html")
+  end
 end
