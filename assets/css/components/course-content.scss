@@ -8,7 +8,7 @@
 }
 
 .course-content .course-curriculum__chapter-content-wrapper {
-  margin-top: 5px;
+  margin-top: 10px;
   background: lighten($light-purple, 33%);
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +50,7 @@
 }
 
 .course-content .course-curriculum__chapter-number {
+  font-family: avenir-medium, sans-serif;
   position: absolute;
   top: 40%;
   left: 10px;
