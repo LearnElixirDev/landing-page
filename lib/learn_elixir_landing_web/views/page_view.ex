@@ -25,6 +25,10 @@ defmodule LearnElixirLandingWeb.PageView do
     "Learn Elixir | Privacy Policy"
   end
 
+  def title("video.html", _) do
+    "Learn Elixir | Video"
+  end
+
   def og_title("index.html", _) do
     "Fast track your Elixir learning experience"
   end
@@ -47,6 +51,10 @@ defmodule LearnElixirLandingWeb.PageView do
 
   def og_title("privacy_policy.html", _) do
     "Privacy Policy"
+  end
+
+  def og_title("video.html", _) do
+    "Video"
   end
 
   def description("methodology.html", _) do

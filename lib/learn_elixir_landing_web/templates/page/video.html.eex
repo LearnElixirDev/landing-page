@@ -1,0 +1,41 @@
+<div class='mt5 pb5'>
+  <script src="http://www.youtube.com/player_api"></script>
+  <div id='player' class='db center'></div>
+
+  <script>
+    // create youtube player
+    let player
+
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('player', {
+        width: '853',
+        height: '480',
+        videoId: 'RbP4gbH2QpY',
+        playerVars: {
+          showinfo: 0,
+          modestbranding: 1,
+          disablekb: 1,
+          rel: 0
+        },
+        events: {
+          onReady: onPlayerReady,
+          onStateChange: onPlayerStateChange
+        }
+      })
+    }
+
+    // autoplay video
+    function onPlayerReady(event) {
+      event.target.playVideo()
+    }
+
+    // when video ends
+    function onPlayerStateChange(event) {
+      if (event.data === 0) {
+        Calendly.initPopupWidget({
+          url: 'https://calendly.com/learn-elixir/15min'
+        })
+      }
+    }
+  </script>
+</div>

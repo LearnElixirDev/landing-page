@@ -9,8 +9,8 @@
          <span class='db-ns'>Elixir Mastery.</span>
        </p>
 
-        <a class='db mt5 tl-ns tc' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/15min'});return false;">
-          <button class='button'>Start Course</button>
+        <a class='db mt5 tl-ns tc' href='/video'>
+          <button class='button'>Learn More</button>
         </a>
       </div>
 
