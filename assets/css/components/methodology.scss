@@ -175,6 +175,12 @@ section.methodology {
       margin-top: 175px;
     }
   }
+
+  @include breakpoint($gt-lg) {
+    .methodology-sandbox {
+        margin-top: 20px;
+    }
+  }
 }
 
 .underpaid {
