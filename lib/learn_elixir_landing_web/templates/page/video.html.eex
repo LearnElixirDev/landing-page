@@ -1,6 +1,6 @@
-<div class='mt5 pb5'>
+<div class='mt5 pb5 player-container'>
   <script src="http://www.youtube.com/player_api"></script>
-  <div id='player' class='db center'></div>
+  <div id='player' class='db center player'></div>
 
   <script>
     // create youtube player
@@ -8,9 +8,7 @@
 
     function onYouTubePlayerAPIReady() {
       player = new YT.Player('player', {
-        width: '853',
-        height: '480',
-        videoId: 'RbP4gbH2QpY',
+        videoId: 'URQ4EshiSM0',
         playerVars: {
           showinfo: 0,
           modestbranding: 1,
