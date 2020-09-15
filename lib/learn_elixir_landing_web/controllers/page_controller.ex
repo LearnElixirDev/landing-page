@@ -5,6 +5,10 @@ defmodule LearnElixirLandingWeb.PageController do
     render(conn, "index.html")
   end
 
+  def marketing_lander(conn, _params) do
+    render(conn, "marketing_lander.html")
+  end
+
   def methodology(conn, _params) do
     render(conn, "methodology.html")
   end

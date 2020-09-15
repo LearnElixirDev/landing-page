@@ -20,6 +20,7 @@ defmodule LearnElixirLandingWeb.Router do
     get "/", PageController, :index
     get "/home", PageController, :redirect_to_index
     get "/methodology", PageController, :methodology
+    get "/welcome", PageController, :marketing_lander
     get "/course-content", PageController, :course_content
     get "/contact", PageController, :contact
     get "/video", PageController, :video
