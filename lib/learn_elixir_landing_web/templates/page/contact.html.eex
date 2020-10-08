@@ -1,8 +1,14 @@
-<section class='page-size-full flex flex-column justify-center items-center'>
-  <h2 class='tc f-avenirm'>Contact</h2>
+<section class='pt5'>
+  <h2 class='mt4 tc f-avenirm'>Contact</h2>
 
-  <div class='mt4 w-80 mxw-sm-ns'>
-    <%= live_render(@conn, LearnElixirLandingWeb.ContactMailerLive) %>
+  <div class='mt3 page-size-two-thirds flex items-center justify-around w-100'>
+    <div class='flex flex-column justify-center items-center w-40'>
+      <div class='mt4 w-90'>
+        <%= live_render(@conn, LearnElixirLandingWeb.ContactMailerLive) %>
+      </div>
+    </div>
+
+    <iframe class='mt4' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLearnElixir%2F&tabs=timeline&width=576&height=364&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=2355026794524819" width="576" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
   </div>
 </section>
 

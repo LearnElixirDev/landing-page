@@ -1,6 +1,14 @@
 $header-height-sm: 9rem;
 $header-height: 5rem;
 
+@mixin page-size-two-third-settings {
+  min-height: calc((100vh - #{$header-height-sm}) / 3);
+
+  @include breakpoint(480px) {
+    min-height: calc((100vh - #{$header-height}) / 3);
+  }
+}
+
 @mixin page-size-settings {
   min-height: calc(100vh - #{$header-height-sm});
 

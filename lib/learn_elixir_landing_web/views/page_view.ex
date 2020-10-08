@@ -13,6 +13,10 @@ defmodule LearnElixirLandingWeb.PageView do
     "Learn Elixir | Methodology"
   end
 
+  def title("thank_you.html", _) do
+    "Learn Elixir | Thank You!!"
+  end
+
   def title("course_content.html", _) do
     "Learn Elixir | Course Content"
   end
@@ -35,6 +39,10 @@ defmodule LearnElixirLandingWeb.PageView do
 
   def og_title("index.html", _) do
     "Fast track your Elixir learning experience"
+  end
+
+  def og_title("thank_you.html", _) do
+    "Thank you!"
   end
 
   def og_title("marketing_lander.html", _) do

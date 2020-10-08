@@ -20,5 +20,7 @@
         <button class='button-small mt-auto'>Read</button>
       <% end %>
     </div>
+
+    <iframe class='mt4' src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FLearnElixir%2F&width=69&layout=button&action=like&size=large&share=false&height=65&appId=597561280592607" width="69" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
   </article>
 <% end %>

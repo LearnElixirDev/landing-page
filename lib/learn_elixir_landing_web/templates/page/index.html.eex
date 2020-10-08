@@ -2,11 +2,9 @@
   <div class='w-80 home-page-main--hero-container'>
     <div class='flex flex-row-ns flex-column justify-between items-center'>
       <div>
-        <h1 class='white fw-b f-domine tc tl-ns'>Level Up</h1>
+        <h1 class='white fw-b f-domine tc tl-ns'>Level Up!</h1>
         <p class='mt4 f-hero white f-avenirl tc tl-ns lh-title'>
-         <span class='db-ns'>Learn Elixir is your direct route through</span>
-         <span class='db-ns'>beginner, intermediate, & advanced, to</span>
-         <span class='db-ns'>Elixir Mastery.</span>
+        <span class='db-ns'>Can you learn Elixir in 10 weeks?</span>
        </p>
 
         <a class='db mt5 tl-ns tc' href='/video'>
@@ -164,3 +162,7 @@
     </a>
   </div>
 </section>
+
+<script>
+  window.listenForBooking()
+</script>

@@ -1,0 +1,12 @@
+.thank-you-container {
+  color: $white;
+
+  .fb-container {
+    border: 2px solid $white;
+  }
+
+  .fb-container,
+  .fb-container iframe {
+    border-radius: 14px;
+  }
+}

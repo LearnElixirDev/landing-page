@@ -1,0 +1,12 @@
+<section class='background-gradient--reverse h-100 w-100 flex items-center justify-center'>
+  <article class='thank-you-container flex flex-column items-center justify-center tc'>
+    <h1 class='f-avenirm'>Thanks <%= @booking_first_name %></h1>
+
+    <aside class='f-avenirl f3 mt5'>Your Strategy Session is booked for <%= @booking_time %></aside>
+
+    <span class='f-avenirl mt5'>Follow us on Facebook for the best in Elixir news and updates</span>
+    <div class='fb-container mt4'>
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLearnElixir%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=2355026794524819" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  <article>
+</section>

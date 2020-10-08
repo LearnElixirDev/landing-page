@@ -17,5 +17,7 @@ import 'phoenix_html'
 import Prism from 'prismjs'
 
 import {liveSocket} from './live-view'
+import {listenForBooking} from './listen-for-booking'
 
 window.connectToLiveSocket = () => liveSocket.connect()
+window.listenForBooking = () => listenForBooking()

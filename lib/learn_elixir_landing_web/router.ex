@@ -24,6 +24,7 @@ defmodule LearnElixirLandingWeb.Router do
     get "/course-content", PageController, :course_content
     get "/contact", PageController, :contact
     get "/video", PageController, :video
+    get "/thank-you", PageController, :thank_you
 
     live "/live/contact-message", LearnElixirLandingWeb.ContactMailerLive
 

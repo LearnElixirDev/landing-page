@@ -56,6 +56,8 @@ defmodule LearnElixirLanding.MixProject do
 
       {:plug_cowboy, "~> 2.0"},
 
+      {:timex, "~> 3.6"},
+
       {:gen_smtp, "~> 0.15"},
       {:hackney, "~> 1.9"},
       {:earmark, "~> 1.4"},

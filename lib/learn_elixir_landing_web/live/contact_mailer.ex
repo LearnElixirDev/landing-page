@@ -11,25 +11,25 @@ defmodule LearnElixirLandingWeb.ContactMailerLive do
     ~L"""
       <%= f = form_for @contact_changeset, "#", [phx_change: :validate, phx_submit: :save, id: "contact-form", class: "form--stacked w-100 center"] %>
         <div class='form-group'>
-          <%= label f, :email %>
-          <%= email_input f, :email %>
+          <%= label f, :email, class: "f3" %>
+          <%= email_input f, :email, class: "h2 mt4" %>
           <%= error_tag f, :email %>
         </div>
 
         <div class='form-group'>
-          <%= label f, :name %>
-          <%= text_input f, :name %>
+          <%= label f, :name, class: "f3" %>
+          <%= text_input f, :name, class: "h2 mt4" %>
           <%= error_tag f, :name %>
         </div>
 
         <div class='form-group'>
-          <%= label f, :message %>
-          <%= textarea f, :message, class: 'h4' %>
+          <%= label f, :message, class: "f3" %>
+          <%= textarea f, :message, class: "h4 mt4" %>
           <%= error_tag f, :message %>
         </div>
 
         <div class='form-button'>
-          <%= submit "Send", disabled: !@contact_changeset.valid?, class: "button-small button-purple w-100" %>
+          <%= submit "Send", disabled: !@contact_changeset.valid?, class: "button-small button-purple w-100 f3" %>
         </div>
       </form>
     """

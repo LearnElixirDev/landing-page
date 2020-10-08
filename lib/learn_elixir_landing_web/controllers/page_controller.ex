@@ -36,4 +36,31 @@ defmodule LearnElixirLandingWeb.PageController do
   def terms_and_conditions(conn, _params) do
     render(conn, "terms_and_conditions.html")
   end
+
+  def thank_you(conn, %{
+    "event_start_time" => start_time,
+    "invitee_full_name" => full_name
+  }) do
+    render(conn, "thank_you.html",
+      booking_first_name: first_name_from_full(full_name),
+      booking_time: booking_time(start_time)
+    )
+  end
+
+  def thank_you(conn, _) do
+    redirect(conn, to: "/")
+  end
+
+  defp first_name_from_full(full_name) do
+    full_name |> String.split(" ") |> List.first
+  end
+
+  defp booking_time(start_time_str) do
+    with {:ok, date_time} <- Timex.parse(start_time_str, "{ISO:Extended}"),
+         {:ok, time} <- Timex.format(date_time, "{Mfull} {D}, {h12}:{m} {AM}") do
+      time
+    else
+      _ -> ""
+    end
+  end
 end
