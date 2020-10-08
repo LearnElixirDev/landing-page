@@ -31,7 +31,7 @@
     function onPlayerStateChange(event) {
       if (event.data === 0) {
         Calendly.initPopupWidget({
-          url: 'https://calendly.com/learn-elixir/15min'
+          url: 'https://calendly.com/learn-elixir/30min'
         })
       }
     }

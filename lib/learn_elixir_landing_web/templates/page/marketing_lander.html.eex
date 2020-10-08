@@ -159,7 +159,7 @@
   <p class='mt4 f-avenirl'>Apply now to see if you are prepared to learn Elixir</p>
 
   <div class='mt4'>
-    <a class='db mt2' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/15min'});return false;">
+    <a class='db mt2' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">
       <button class='button'>Book Call</button>
     </a>
   </div>

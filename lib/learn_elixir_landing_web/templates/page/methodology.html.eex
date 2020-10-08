@@ -326,7 +326,7 @@
 
   <div class='mt4'>
     <!-- Calendly link widget begin -->
-    <a class='db mt5 tl-ns tc' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/15min'});return false;">
+    <a class='db mt5 tl-ns tc' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">
       <button class='button'>Book Call</button>
     </a>
     <!-- Calendly link widget end -->
