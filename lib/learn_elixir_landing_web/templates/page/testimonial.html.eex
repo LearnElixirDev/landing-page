@@ -1,0 +1,13 @@
+<article class='f-avenirm'>
+  <div class='flex items-center'>
+    <img class='w3 h3 br-circle' src='<%= Routes.static_path(@conn, "/default-user.jpg") %>'>
+
+    <span class='f3 ml3'>
+      <%= @name %>
+    </span>
+  </div>
+
+  <aside class='f-avenirl mt2 lh-copy'>
+    "<%= @testimonial %>"
+  </aside>
+</article>

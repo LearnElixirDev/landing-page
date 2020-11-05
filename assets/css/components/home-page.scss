@@ -19,3 +19,50 @@ section.home-page-main {
 .home-page-info {
   max-width: 1450px;
 }
+
+.home-page-testimonials {
+  flex-direction: column;
+
+  @include breakpoint(700px) {
+    flex-direction: row;
+  }
+}
+
+.home-page-testimonials article {
+  height: unset;
+  width: 90%;
+
+  &:not(:first-of-type) {
+    margin-top: $spacing-large;
+  }
+
+  @include breakpoint(700px) {
+    width: 40%;
+    height: 400px;
+
+    &:not(:first-of-type) {
+      margin-top: 0;
+    }
+  }
+
+  @include breakpoint($gt-sm) {
+    height: 290px;
+  }
+}
+
+.home-page-button-container {
+  justify-content: center;
+
+  @include breakpoint($gt-xs) {
+    justify-content: start;
+  }
+
+  small {
+    margin-left: 4.3em;
+  }
+
+  small a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}

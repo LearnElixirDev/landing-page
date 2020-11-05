@@ -7,16 +7,13 @@
           <span class='db-ns'>Can you learn Elixir in 10 weeks?</span>
         </p>
 
-        <div class='flex items-center mt5 '>
+        <div class='mt5 home-page-button-container'>
           <a class='db tl-ns tc' href='/video'>
-            <button class='button-medium'>Info Video</button>
+            <button class='button'>Info Video</button>
           </a>
-
-          <span class='f-domine white mh2 f3'>or</span>
-
-          <a class='db' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">
-            <button class='button-medium'>Book Call</button>
-          </a>
+          <small class='db f-avenirl white mt2 f4'>
+            or <a class='nav-link-blue' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">book a call</a>
+          </small>
         </div>
       </div>
 
@@ -88,13 +85,24 @@
   </div>
 </section>
 
-<section class='mt3 flex flex-column items-center w-100 justify-center justify-start-ns'>
+<section class='flex flex-column items-center w-100 justify-center justify-start-ns'>
   <h2 class='f-domine purple'>Success Stories</h1>
 
+  <div class='mt5 flex justify-between items-center w-75 home-page-testimonials'>
+    <%= render LearnElixirLandingWeb.PageView, "testimonial.html",
+      conn: @conn,
+      name: "Ryker R.",
+      testimonial: "I have been a part of the Learn Elixir Community for over a year know, and it has made a massive difference in the way I think about and implement new projects. The educator, Mika, has been very diligent on answering everyone's questions throughly. I am constantly learning new things every week. It's nice to know that you have a professional to help you through problems when they arise. The course itself is to the point and chalk full of pure functional programming gold!" %>
+
+    <%= render LearnElixirLandingWeb.PageView, "testimonial.html",
+      conn: @conn,
+      name: "Michael P.",
+      testimonial: "This is my first functional programming course that I’ve enrolled in and I have to say that Learn-Elixir has provided me with great value and continues to do so week after week. All of the assignments that I’ve done so far have promoted the use of modern libraries and techniques and one of my favorite aspects of this course is the weekly online conference call that every member of the course is able to participate in." %>
+  </div>
 </section>
 
 
-<section class='mt3 flex flex-column items-center w-100 justify-center justify-start-ns'>
+<section class='mt5 flex flex-column items-center w-100 justify-center justify-start-ns'>
   <h2 class='f-domine purple'>Our Team</h1>
 
   <div class='mt4 ph2 pb5 flex mb5 f-avenirl flex justify-around items-center team-card-container'>
@@ -142,7 +150,7 @@
 
         <div class='flex flex-column'>
           <div class='dt w-100 mt4'>
-            <h3 class='f-avenirm tc'>Jerry Graham</h3>
+            <h3 class='f-avenirm tc'>Jeremy Graham</h3>
           </div>
 
           <aside class='f6 pb2 mt3 lh-copy measure mt2 mid-gray f-avenirl'>
@@ -166,9 +174,11 @@
 </section>
 
 <section class='vh-75 flex flex-column justify-center items-center bg-light-purple white'>
-  <h2 class='f-domine'>Book Call</h2>
+  <h2 class='f-domine lh-title'>Join our Growing Community of</h2>
+  <h2 class='f-domine lh-title'>Lifetime Members</h2>
 
-  <p class='mt4 f-avenirl'>Apply now to see if you are prepared to learn Elixir</p>
+  <p class='mt4 lh-copy f-avenirl'>Book a call now with Jeremy Graham to go over the datails</p>
+  <p class='lh-copy f-avenirl'>and see if we're a good fit for each other</p>
 
   <div class='mt4'>
     <a class='db mt2' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">
