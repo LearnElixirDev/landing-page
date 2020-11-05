@@ -103,11 +103,11 @@ section.methodology {
 }
 
 .methodology-gains-container {
-  width: 90%;
+  width: 80%;
 
   @include breakpoint(1170px) {
     max-width: 1300px;
-    width: 80%;
+    width: 70%;
     margin-top: 0;
   }
 }
@@ -115,10 +115,10 @@ section.methodology {
 .methodology-knowldedge-gain {
   @include breakpoint($zig-zag-size-gt) {
     margin-top: 125px;
-    height: 1208px;
+    height: 975px;
 
     .methodology-consolidated-resources {
-      margin-top: 200px;
+      margin-top: 90px;
     }
 
     .methodology-one-hundred-percent {
@@ -126,14 +126,14 @@ section.methodology {
     }
 
     .methodology-self-paced {
-      margin-top: 225px;
+      margin-top: 175px;
     }
   }
 }
 
 .methodology-wisdom-gain {
   @include breakpoint($zig-zag-size-gt) {
-    height: 1622px;
+    height: 1400px;
     margin-top: 105px;
 
     .methodology-live-programming {
@@ -145,7 +145,7 @@ section.methodology {
     }
 
     .methodology-quick-clarification {
-      margin-top: 300px;
+      margin-top: 200px;
     }
 
     .methodology-speed-run {
@@ -156,11 +156,11 @@ section.methodology {
 
 .methodology-experience-gain {
   @include breakpoint($zig-zag-size-gt) {
-    height: 1919px;
+    height: 1540px;
     margin-top: 125px;
 
     .methodology-practical-application {
-      margin-top: 260px;
+      margin-top: 125px;
     }
 
     .methodology-proof-of-work {
@@ -168,11 +168,11 @@ section.methodology {
     }
 
     .methodology-fam {
-      margin-top: 200px;
+      margin-top: 100px;
     }
 
     .methodology-sandbox {
-      margin-top: 175px;
+      margin-top: 150px;
     }
   }
 

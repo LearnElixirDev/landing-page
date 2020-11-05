@@ -1,13 +1,14 @@
 <section class='ph3 methodology background-gradient--reverse white center flex flex-column items-center justify-center vh-70'>
   <h2 class='f-domine'>Methodology</h2>
   <p class='mt4 f-avenirl lh-copy mxw-xl ph3 tc'>
-    <span class='db-ns'>We help developers earn six-figure incomes programming Elixir via</span>
-    <span class='db-ns'>mentorship, exclusive content, and industry connections</span>
+    <span class='db-ns'>We help developers master Elixir via mentorship, exclusive
+</span>
+    <span class='db-ns'>content, and high-income opportunities.</span>
   </p>
 
   <div class='mt5'>
     <a class='db mt5 tl-ns tc' href='/video'>
-      <button class='button'>Learn More</button>
+      <button class='button'>Info Video</button>
     </a>
   </div>
 </section>
@@ -210,8 +211,8 @@
     <div class='mr-auto methodology-gains-item methodology-quick-clarification'>
       <h3 class='f-avenirb'>Quick Clarification</h3>
       <p class='mt3'>
-        <span class='db'>Message mentors on Facebook or</span>
-        <span class='db'>Slack if you’re stuck at a module or</span>
+        <span class='db'>Message mentors on Slack </span>
+        <span class='db'>if you’re stuck at a module or</span>
         <span class='db'>facing the unknown at work</span>
       </p>
     </div>

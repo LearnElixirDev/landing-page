@@ -1,12 +1,5 @@
 .button {
   font-size: 1.625rem;
-  background-color: $white;
-  color: $purple;
-  border: 0;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: avenir-light, avenir, sans-serif;
-  transition: background-color .2s ease-in-out;
 
   padding: {
     left: 2.75rem;
@@ -14,31 +7,38 @@
     top: 1rem;
     bottom: 1rem;
   }
+}
 
-  &:hover {
-    background-color: darken($white, 9);
-  }
+.button-medium {
+  font-size: 1.225rem;
 
-  &:active, &:focus {
-    outline: 0;
+  padding: {
+    left: 1.75rem;
+    right: 1.75rem;
+    top: 1rem;
+    bottom: 1rem;
   }
 }
 
-.button-small {
-  background-color: $white;
-  color: $purple;
-  border: 0;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: avenir-light, avenir, sans-serif;
-  transition: background-color .2s ease-in-out;
 
+.button-small {
   padding: {
     left: 1.75rem;
     right: 1.75rem;
     top: 0.75rem;
     bottom: 0.75rem;
   }
+}
+
+
+.button, .button-small, .button-medium {
+  background-color: $white;
+  color: $purple;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: avenir-light, avenir, sans-serif;
+  transition: background-color .2s ease-in-out;
 
   &:hover {
     background-color: darken($white, 9);

@@ -2,14 +2,22 @@
   <div class='w-80 home-page-main--hero-container'>
     <div class='flex flex-row-ns flex-column justify-between items-center'>
       <div>
-        <h1 class='white fw-b f-domine tc tl-ns'>Level Up!</h1>
+        <h1 class='white fw-b f-domine tc tl-ns'>The Ultimate Elixir Course</h1>
         <p class='mt4 f-hero white f-avenirl tc tl-ns lh-title'>
-        <span class='db-ns'>Can you learn Elixir in 10 weeks?</span>
-       </p>
+          <span class='db-ns'>Can you learn Elixir in 10 weeks?</span>
+        </p>
 
-        <a class='db mt5 tl-ns tc' href='/video'>
-          <button class='button'>Learn More</button>
-        </a>
+        <div class='flex items-center mt5 '>
+          <a class='db tl-ns tc' href='/video'>
+            <button class='button-medium'>Info Video</button>
+          </a>
+
+          <span class='f-domine white mh2 f3'>or</span>
+
+          <a class='db' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">
+            <button class='button-medium'>Book Call</button>
+          </a>
+        </div>
       </div>
 
       <div class='comp-pers-white mt5 mt0-ns'>
@@ -19,26 +27,26 @@
 
     <div class='flex flex-column flex-row-ns justify-between mt5 white'>
       <div class='pr4-ns mxw-l home-page-value-prop'>
-        <h3 class='f-avenirm'>Exciting Projects</h3>
+        <h3 class='f-avenirm'>Mentorship</h3>
 
         <p class='mt3 f-avenirl lh-copy'>
-          Elixir is a dynamic, functional language designed for building scalable and maintainable applications like WhatsApp, Pinterest, and Discord.
+          Connect with experienced mentors to clarify content & aid in real-world problem solving.
         </p>
       </div>
 
       <div class='mt4 mt0-ns ph4-ns mxw-l home-page-value-prop'>
-        <h3 class='f-avenirm'>High Demand</h3>
+        <h3 class='f-avenirm'>Exclusive Content</h3>
 
         <p class='mt3 f-avenirl lh-copy'>
-          Stack Overflow’s 2019 survey placed Elixir as the 5th highest paid language globally and 8th most loved!
+          Everything you need to know to become a talented Elixir developer.
         </p>
       </div>
 
       <div class='mt4 mt0-ns pl4-ns mxw-l home-page-value-prop'>
-        <h3 class='f-avenirm'>Become Indispensable</h3>
+        <h3 class='f-avenirm'>High Income Opporunities</h3>
 
         <p class='mt3 f-avenirl lh-copy'>
-          Be sought after or retained by companies by separating yourself from the generalists as a specialist.
+          Introductions, recommendations, & suggestions to stand out as the obvious applicant.
         </p>
       </div>
     </div>
@@ -48,8 +56,8 @@
 <section class='pv6 purple w-80 center lh-copy home-page-info tc tl-ns'>
   <div class='flex flex-column-reverse flex-row-ns justify-between items-center'>
     <div class='mt4 mt0-ns'>
-      <h3 class='f-avenirh'>Exclusive Curated Content</h3>
-      <p class='f-avenirm mxw-m mt2'>Everything you need to know to become a talented Elixir developer.</p>
+      <h3 class='f-avenirh'>Exciting Projects</h3>
+      <p class='f-avenirm mxw-m mt2'>Elixir is a dynamic, functional language designed for building scalable and maintainable applications like WhatsApp, Pinterest, and Discord.</p>
     </div>
 
     <div class='comp-img-1 ml5-ns'>
@@ -63,15 +71,15 @@
     </div>
 
     <div class='mt3 mt0-ns ml5-ns'>
-      <h3 class='f-avenirh'>Mentorship</h3>
-      <p class='f-avenirm mxw-m mt2'>Connect with experienced mentors to clarify content & aid in real-world problem solving.</p>
+      <h3 class='f-avenirh'>High Demand</h3>
+      <p class='f-avenirm mxw-m mt2'>Stack Overflow’s 2019 survey placed Elixir as the 5th highest paid language globally and 8th most loved!</p>
     </div>
   </div>
 
   <div class='flex flex-column-reverse flex-row-ns justify-between items-center mt6'>
     <div  class='mt3 mt0-ns'>
-      <h3 class='f-avenirh'>Hiring Partners</h3>
-      <p class='f-avenirm mxw-m mt2'>Introductions, recommendations, & suggestions to stand out as the obvious choice.</p>
+      <h3 class='f-avenirh'>Become Indispensable</h3>
+      <p class='f-avenirm mxw-m mt2'>Be sought after or retained by companies by separating yourself from the generalists as a specialist.</p>
     </div>
 
     <div class='comp-img-3 ml5-ns'>
@@ -79,6 +87,12 @@
     </div>
   </div>
 </section>
+
+<section class='mt3 flex flex-column items-center w-100 justify-center justify-start-ns'>
+  <h2 class='f-domine purple'>Success Stories</h1>
+
+</section>
+
 
 <section class='mt3 flex flex-column items-center w-100 justify-center justify-start-ns'>
   <h2 class='f-domine purple'>Our Team</h1>
