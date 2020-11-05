@@ -38,7 +38,7 @@ defmodule LearnElixirLandingWeb.PageView do
   end
 
   def og_title("index.html", _) do
-    "Fast track your Elixir learning experience"
+    "The Ultimate Elixir Course"
   end
 
   def og_title("thank_you.html", _) do
@@ -46,7 +46,7 @@ defmodule LearnElixirLandingWeb.PageView do
   end
 
   def og_title("marketing_lander.html", _) do
-    "Fast track your Elixir learning experience"
+    "The Ultimate Elixir Course"
   end
 
   def og_title("methodology.html", _) do
@@ -73,6 +73,10 @@ defmodule LearnElixirLandingWeb.PageView do
     "Video"
   end
 
+  def og_image(_, _) do
+    "https://learn-elixir.dev/learn-elixir-banner.png"
+  end
+
   def description("methodology.html", _) do
     "The methodology we use to help developers master Elixir."
   end
@@ -82,7 +86,7 @@ defmodule LearnElixirLandingWeb.PageView do
   end
 
   def description(_, _) do
-    "We help developers master Elixir and build work-life balance into a lasting career."
+    "We help developers master Elixir via mentorship, exclusive content, and high-income opportunities."
   end
 
   def ld_schema(_, _) do

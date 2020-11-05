@@ -66,6 +66,18 @@ defmodule LearnElixirLandingWeb.BlogView do
     description
   end
 
+  def og_image("show.html", %{blog_name: "dangers-of-genservers"}) do
+    "https://lure.is/blog-elixir-dangers-of-genservers.ebf92f59742ca6dc324c772021bb59e4.jpeg"
+  end
+
+  def og_image("show.html", %{blog_name: "uses-of-elixir-task-module"}) do
+    "https://learn-elixir.dev/blog-images/tasks-img.jpg"
+  end
+
+  def og_image("index.html", _) do
+    "https://learn-elixir.dev/learn-elixir-banner.png"
+  end
+
   def ld_schema("index.html", _) do
     Phoenix.HTML.raw("""
     {

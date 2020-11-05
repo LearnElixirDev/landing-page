@@ -1,9 +1,15 @@
+<title><%= @view_module.title(@conn) %></title>
+
 <meta property='fb:app_id' content='2355026794524819'/>
 
+<meta name='description' content='<%= @view_module.description(@conn) %>'>
+
+<meta property='og:title' content='<%= @view_module.og_title(@conn) %>'>
+<meta property='og:description' content='<%= @view_module.description(@conn) %>'>
 <meta property='og:type' content='profile'/>
 <meta property='og:url' content='https://learn-elixir.dev'>
 <meta property='og:site_name' content='Learn Elixir'>
-<meta property='og:image' content='https://learn-elixir.dev/learn-elixir-banner.png'>
+<meta property='og:image' content='<%= @view_module.og_image(@conn) %>'>
 <meta property='og:image:alt' content='Learn Elixir Banner'>
 
 <meta name='keywords' content='education,learn,elixir,learn elixir,software,development'>
@@ -13,3 +19,7 @@
 
 <link rel='canonical' href='https://learn-elixir.dev'/>
 <meta name='robots' content='index,follow'/>
+
+<script type='application/ld+json'>
+  <%= @view_module.ld_schema(@conn) %>
+</script>

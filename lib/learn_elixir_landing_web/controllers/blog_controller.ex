@@ -16,7 +16,7 @@ defmodule LearnElixirLandingWeb.BlogController do
   end
 
   def show(conn, %{"id" => blog_name}) do
-    blog_name = String.replace(blog_name, "_", "-")
+    blog_name = blog_name |> String.downcase |> String.replace("_", "-")
 
     render(conn, "show.html", blog_name: blog_name, blog_details: @blog_details_map[blog_name])
   end
