@@ -4,6 +4,12 @@
   padding-bottom: $spacing-medium;
   padding-left: $spacing-medium;
   padding-right: $spacing-medium;
+  border-bottom: 1px solid $light-purple;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 10000;
 
   @include breakpoint(480px) {
     min-height: 5rem;

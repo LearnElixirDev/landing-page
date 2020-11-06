@@ -5,3 +5,11 @@ body {
   height: 100%;
   width: 100%;
 }
+
+main {
+  padding-top: 66px;
+
+  @include breakpoint($gt-xs) {
+    padding-top: 78px;
+  }
+}

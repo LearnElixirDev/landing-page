@@ -58,10 +58,19 @@ section.home-page-main {
   }
 
   small {
+  }
+
+}
+
+.home-page-button-container small {
+  text-align: center;
+
+  @include breakpoint($gt-xs) {
+    text-align: left;
     margin-left: 4.3em;
   }
 
-  small a {
+  a {
     text-decoration: underline;
     font-weight: bold;
   }
