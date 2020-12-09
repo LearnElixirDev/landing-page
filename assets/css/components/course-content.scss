@@ -1,3 +1,5 @@
+$background-purple: #7D479F;
+
 .course-content .course-curriculum__chapter-list .course-curriculum__chapter {
   width: 90%;
   margin: 0 auto;
@@ -9,7 +11,7 @@
 
 .course-content .course-curriculum__chapter-content-wrapper {
   margin-top: 10px;
-  background: lighten($light-purple, 33%);
+  background: $background-purple;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,17 +46,9 @@
 .course-content .course-curriculum__chapter-title {
   font-family: avenir-medium, sans-serif;
   text-align: center;
-  color: $black;
+  color: $white;
   line-height: 1.2;
   letter-spacing: 0.3px;
-}
-
-.course-content .course-curriculum__chapter-number {
-  font-family: avenir-medium, sans-serif;
-  position: absolute;
-  top: 40%;
-  left: 10px;
-  color: inherit;
 }
 
 .course-content .course-curriculum__chapter-header h3 {
@@ -62,6 +56,7 @@
 }
 
 .course-content .course-curriculum__chapter-content {
+  color: $white;
   padding-top: 15px;
   flex-basis: 100%;
   font-family: avenir-light, sans-serif;
@@ -79,6 +74,7 @@
 }
 
 .course-content .course-curriculum__icon {
+  color: $white;
   width: 18px;
   margin-top: 0.7px;
 }

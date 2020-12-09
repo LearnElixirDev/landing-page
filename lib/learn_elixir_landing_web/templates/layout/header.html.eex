@@ -5,7 +5,7 @@
     <% end %>
   </div>
 
-  <nav class='flex'>
+  <nav class='flex justify-center items-center'>
     <a class='db' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">
       <button class='button-medium button-purple'>Book Call</button>
     </a>

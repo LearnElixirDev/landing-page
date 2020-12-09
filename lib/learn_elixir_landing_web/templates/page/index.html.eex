@@ -1,5 +1,5 @@
 <section class='home-page-main page-size-full flex flex-column justify-center items-center background-gradient pv5'>
-  <div class='w-80 home-page-main--hero-container'>
+  <div class='w-80 mt4 home-page-main--hero-container'>
     <div class='flex flex-row-ns flex-column justify-between items-center'>
       <div>
         <h1 class='white fw-b f-domine tc tl-ns'>The Ultimate Elixir Course</h1>
@@ -14,9 +14,10 @@
         </div>
       </div>
 
-      <div class='mt5 mt0-ns'>
-        <div class='player-container'>
+      <div class='mt5 mt0-ns home-player-container_wrapper'>
+        <div class='home-player-container'>
           <script src="https://www.youtube.com/player_api"></script>
+
           <div id='player' class='db center player'></div>
 
           <script>

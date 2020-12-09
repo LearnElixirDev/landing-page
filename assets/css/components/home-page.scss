@@ -8,6 +8,25 @@ section.home-page-main {
   }
 }
 
+.home-player-container_wrapper {
+  width: 100%;
+
+  @include breakpoint($gt-sm) {
+    width: 50%;
+  }
+}
+
+.home-player-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  min-width: 300px;
+
+  #player {
+    width: 100%;
+  }
+}
+
 .home-page-main .home-page-main--hero-container {
   max-width: 1575px;
 

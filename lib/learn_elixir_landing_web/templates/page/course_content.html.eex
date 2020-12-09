@@ -1,8 +1,21 @@
 <section class='course-content'>
-  <h2 class='f-avenirm purple lh-title tc pv4'>Course Content</h2>
+  <div class='background-gradient--reverse vh-50 flex flex-column justify-center items-center'>
+    <h2 class='f-avenirm white lh-title tc pv4'>Course Content</h2>
 
-  <article class="section__content mt4">
+    <div class='tc f3 f-avenirm white spaced-text-block lh-copy ph3'>
+      <span>Developers can pass each level in 4 - 10 hours</span>
+      <span>depending on comprehension and experience.</span>
+    </div>
+  </div>
+
+
+  <article class="section__content mt5">
     <ul class="course-curriculum__chapter-list section__body">
+      <li class='mv5 f3 tc f-avenirl spaced-text-block lh-copy ph3'>
+        <span>If job opportunities are your focus we can begin helping you with recommendations and referrals once</span>
+        <span>you’ve defeated the Mini-Boss and have a completed project on your GitHub to show hiring managers.</span>
+      </li>
+
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
           <header class="course-curriculum__chapter-header">
@@ -449,6 +462,7 @@
           </ul>
         </div>
       </li>
+
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
@@ -1437,14 +1451,23 @@
             </li>
           </ul>
         </div>
+
+      <li class='mv5 f3 tc f-avenirl spaced-text-block lh-copy ph3'>
+        <span>Once completed you will be awarded a Learn Elixir Certificate of Excellence and all content</span>
+        <span>will remain available to you for review as a part of your Lifetime Membership.</span>
+      </li>
+
       </li>
     </ul>
   </article>
 
   <div class='mt5 vh-75 flex flex-column justify-center items-center bg-light-purple white'>
-    <h2 class='f-domine'>Book Call</h2>
+    <h2 class='f-domine'>Get Started</h2>
 
-    <p class='mt4 f-avenirl'>Apply now to see if you are prepared to learn Elixir</p>
+    <p class='mt4 mxn f-avenirl spaced-text-block lh-copy ph3'>
+      <span>If Elixir is the next language you want to master book a call now</span>
+      <span>with Jeremy Graham to see if Learn Elixir the best resource to reach your goals</span>
+    </p>
 
     <div class='mt4'>
       <a class='db mt2' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">

@@ -9,7 +9,11 @@ body {
 main {
   padding-top: 110px;
 
-  @include breakpoint($gt-xs) {
+  @include breakpoint($nav-header-break) {
     padding-top: 78px;
+  }
+
+  @include breakpoint(480px) {
+    padding-top: 68px;
   }
 }
