@@ -18,6 +18,7 @@
 @import 'components/card';
 @import 'components/player';
 @import 'components/main-header';
+@import 'components/main-footer';
 @import 'components/course-content';
 @import 'components/team-card';
 @import 'components/bottom-purple-box';
@@ -59,6 +60,7 @@
 
 // Vendor
 @import '~github-markdown-css';
+@import "~hamburgers/dist/hamburgers";
 
 // Tachyons
 @import '~tachyons-sass/scss/box-sizing';

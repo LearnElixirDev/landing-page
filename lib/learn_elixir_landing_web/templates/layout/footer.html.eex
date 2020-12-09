@@ -1,4 +1,4 @@
-<footer class='flex justify-between items-center ph3 pv4 f-avenirl purple'>
+<footer class='main-footer bg-white flex justify-between items-center ph3 pv4 f-avenirl purple'>
   <div>
     <span>&copy; Learn Elixir 2020</span>
   </div>

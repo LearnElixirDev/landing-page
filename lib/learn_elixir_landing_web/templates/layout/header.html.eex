@@ -5,12 +5,47 @@
     <% end %>
   </div>
 
-  <nav role='navigation'>
-    <ul class='flex f-avenirl pt3 f3'>
-      <li><%= link "Home", to: "/", class: "nav-link" %></li>
-      <li class='ml4'><%= link "Methodology", to: "/methodology", class: "nav-link" %></li>
-      <li class='ml4'><%= link "Blog", to: "/blogs", class: "nav-link" %></li>
-    </ul>
+  <nav class='flex'>
+    <a class='db' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">
+      <button class='button-medium button-purple'>Book Call</button>
+    </a>
+
+    <button style='outline: none;' id='hamburger-nav-menu' class='hamburger hamburger--elastic ml4' type='button'
+            aria-label='Menu' aria-controls='navigation' aria-expanded='true/false'>
+      <span class='hamburger-box'>
+        <span class='hamburger-inner'></span>
+      </span>
+    </button>
+  </nav>
+
+  <nav id='hamburger-nav-menu-contents' class='main-header-sidebar'>
+    <div id="navigation">
+      <nav role='navigation'>
+        <ul class='f-avenirl pt3 ph4 f3'>
+          <li><%= link "Home", to: "/", class: "nav-link" %></li>
+          <li class='pt2'><%= link "Methodology", to: "/methodology", class: "nav-link" %></li>
+          <li class='pt2'><%= link "Course Content", to: "/course-content", class: "nav-link" %></li>
+          <li class='pt2'><%= link "Blog", to: "/blogs", class: "nav-link" %></li>
+        </ul>
+      </nav>
+    </div>
   </nav>
 </header>
 
+<script>
+  var hamburgerNavMenu = document.getElementById('hamburger-nav-menu')
+  var hamburgerNavContents = document.getElementById('hamburger-nav-menu-contents')
+  var isHamburgerOpen = false
+
+  hamburgerNavMenu.addEventListener('click', () => {
+    isHamburgerOpen = !isHamburgerOpen
+
+    if (isHamburgerOpen) {
+      hamburgerNavContents.classList.add('is-active')
+      hamburgerNavMenu.classList.add('is-active')
+    } else {
+      hamburgerNavMenu.classList.remove('is-active')
+      hamburgerNavContents.classList.remove('is-active')
+    }
+  })
+</script>
