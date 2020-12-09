@@ -11,14 +11,43 @@
           <a class='db tl-ns tc' href='/video'>
             <button class='button'>Info Video</button>
           </a>
-          <small class='db f-avenirl white mt2 f4'>
-            or <a class='nav-link-blue' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">book a call</a>
-          </small>
         </div>
       </div>
 
-      <div class='comp-pers-white mt5 mt0-ns'>
-        <%= render LearnElixirLandingWeb.IconView, "computer_person_white.html", conn: @conn %>
+      <div class='mt5 mt0-ns'>
+        <div class='player-container'>
+          <script src="https://www.youtube.com/player_api"></script>
+          <div id='player' class='db center player'></div>
+
+          <script>
+            // create youtube player
+            let player
+
+            function onYouTubePlayerAPIReady() {
+              player = new YT.Player('player', {
+                videoId: 'URQ4EshiSM0',
+                playerVars: {
+                  showinfo: 0,
+                  modestbranding: 1,
+                  disablekb: 1,
+                  rel: 0
+                },
+                events: {
+                  onStateChange: onPlayerStateChange
+                }
+              })
+            }
+
+            // when video ends
+            function onPlayerStateChange(event) {
+              if (event.data === 0) {
+                Calendly.initPopupWidget({
+                  url: 'https://calendly.com/learn-elixir/30min'
+                })
+              }
+            }
+          </script>
+        </div>
       </div>
     </div>
 
@@ -128,13 +157,13 @@
           </aside>
 
           <div class='flex items-center'>
-            <a class='dib' href='https://ca.linkedin.com/in/mikakalathil'>
+            <a class='dib' href='https://ca.linkedin.com/in/mikakalathil' target='_blank'>
               <div class='w2'>
                 <%= render LearnElixirLandingWeb.IconView, "linkedin.html", conn: @conn %>
               </div>
             </a>
 
-            <a class='dib ml3' href='https://github.com/mikaak'>
+            <a class='dib ml3' href='https://github.com/mikaak' target='_blank'>
               <div class='w2'>
                 <%= render LearnElixirLandingWeb.IconView, "github.html", conn: @conn %>
               </div>
@@ -162,7 +191,7 @@
             </p>
           </aside>
 
-          <a class='dib' href='https://www.linkedin.com/in/jeremy-thomas-graham/'>
+          <a class='dib' href='https://www.linkedin.com/in/jeremy-thomas-graham/' target='_blank'>
             <div class='w2'>
               <%= render LearnElixirLandingWeb.IconView, "linkedin.html", conn: @conn %>
             </div>
@@ -174,11 +203,15 @@
 </section>
 
 <section class='vh-75 flex flex-column justify-center items-center bg-light-purple white'>
-  <h2 class='f-domine lh-title'>Join our Growing Community of</h2>
-  <h2 class='f-domine lh-title'>Lifetime Members</h2>
+  <h2 class='tc f-domine lh-title'>
+    <span class='di db-ns'>Join our Growing Community of</span>
+    <span class='di db-ns'>Lifetime Members</span>
+  </h2>
 
-  <p class='mt4 lh-copy f-avenirl'>Book a call now with Jeremy Graham to go over the datails</p>
-  <p class='lh-copy f-avenirl'>and see if we're a good fit for each other</p>
+  <p class='mt4 lh-copy f-avenirl tc'>
+    <span class='di'>Book a call now with Jeremy Graham to go over the details</span>
+    <span class='di'>and see if we're a good fit for each other</span>
+  </p>
 
   <div class='mt4'>
     <a class='db mt2' href='javascript:void(0)' onclick="Calendly.initPopupWidget({url: 'https://calendly.com/learn-elixir/30min'});return false;">

@@ -5,7 +5,6 @@
     <ul class="course-curriculum__chapter-list section__body">
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">1</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level One - Intro to Elixir and How to succeed in this course</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -65,7 +64,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">2</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level Two - The Syntax and Fundamentals</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -157,7 +155,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">3</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level Three - REST and GraphQL with Phoenix</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -297,7 +294,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">4</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level Four - Ecto DB and Architecture</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -413,243 +409,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">5</span>
-          <header class="course-curriculum__chapter-header">
-            <h3 class="course-curriculum__chapter-title">Level Five - OTP &amp; Testing</h3>
-            <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
-          </header>
-          <ul class="course-curriculum__chapter-content" id="chapter-5" style="display: block;">
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_download.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              Overview Audio &amp; Transcripts
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              Overview
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_download.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              1 - Audio &amp; Transcripts
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              1 - What is OTP
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              1.1 - OTP Supervisors and Workers
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              1.2 - OTP Process Communication
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              1.3 - OTP Agent, GenServers &amp; Tasks
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              1.4 - OTP Application
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              1.5 - OTP "Let it Crash"
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              1.6 - OTP Process Limitations
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_test.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              OTP Process Quiz
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_download.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              2 - Audio &amp; Transcripts
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              2 - ExUnit
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              2.1 - Writing Testable Code
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              2.2 - Testing OTP
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              2.3 - Testing Ecto
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              2.4 - Testing REST
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              2.5 - Testing GraphQL
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              2.6 - Testing GraphQL Subscriptions
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_test.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              Testing Basics Quiz
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_download.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              3 - Audio and Transcripts
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              3 - Writing Maintainable Tests
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              3.1 - Cleaning up Tests with Support
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              3.2 - Stubbing &amp; Mocking
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              3.3 - Testing Side Effects
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_video.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              3.4 - Crushing Bugs with IEx, Logger and IO.inspect
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_test.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              Testing Maintainability Quiz
-              </span>
-            </li>
-            <li>
-              <div class='course-curriculum__icon'>
-                <%= render LearnElixirLandingWeb.IconView, "course_assignment.html", conn: @conn %>
-              </div>
-              <span class="course-curriculum__chapter-lesson">
-              OTP Process and Testing Assignment
-              </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="course-curriculum__chapter">
-        <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">6</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Midterm Project - Mini Boss</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -693,7 +452,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">7</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level Six - Absinthe Deep Dive &amp; Pre-emptive error Handling</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -841,7 +599,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">8</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level Seven - Planning for scalability &amp; How to go distributed</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -1045,7 +802,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">9</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level Eight - Distributed tooling</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -1265,7 +1021,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">10</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level Nine - How to use Elixir to architect an application</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -1445,7 +1200,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">11</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Final Project - Last Boss</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -1489,7 +1243,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">12</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Level Ten - How to create and manage releases</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>
@@ -1653,7 +1406,6 @@
 
       <li class="course-curriculum__chapter">
         <div class="course-curriculum__chapter-content-wrapper">
-          <span class="course-curriculum__chapter-number">13</span>
           <header class="course-curriculum__chapter-header">
             <h3 class="course-curriculum__chapter-title">Final Remarks</h3>
             <span class="course-curriculum__chapter-header__toggle"><button tabindex="0" aria-label="toggle chapter content"></button></span>

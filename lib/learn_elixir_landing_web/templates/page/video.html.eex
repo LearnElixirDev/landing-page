@@ -1,5 +1,5 @@
 <div class='mt5 pb5 player-container'>
-  <script src="http://www.youtube.com/player_api"></script>
+  <script src="https://www.youtube.com/player_api"></script>
   <div id='player' class='db center player'></div>
 
   <script>

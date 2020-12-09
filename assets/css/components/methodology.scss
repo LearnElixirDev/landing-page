@@ -1,4 +1,5 @@
 $zig-zag-size-gt: 800px;
+$text-break-start: 460px;
 
 .methodology-how-to-learn-fast--container {
   @include breakpoint($lt-sm) {
@@ -9,6 +10,12 @@ $zig-zag-size-gt: 800px;
 }
 
 .methodology-how-to-learn-fast {
+  @include breakpoint(max-width $text-break-start) {
+    > div {
+      text-align: center;
+    }
+  }
+
   @include breakpoint($lt-sm) {
     h4 {
       font-size: 1.75rem;
@@ -34,6 +41,12 @@ $zig-zag-size-gt: 800px;
 
 section.methodology {
   min-height: 28.5rem;
+}
+
+.methodology-gains-section h3 {
+  @include breakpoint(max-width 800px) {
+    text-align: center;
+  }
 }
 
 .methodology-ape  {

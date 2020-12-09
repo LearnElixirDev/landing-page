@@ -1,0 +1,11 @@
+.spaced-text-block {
+  text-align: center;
+
+  > span {
+    display: inline;
+
+    @include breakpoint($gt-xs) {
+      display: block;
+    }
+  }
+}

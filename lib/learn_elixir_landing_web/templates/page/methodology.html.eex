@@ -65,8 +65,8 @@
         <%= render LearnElixirLandingWeb.IconView, "ape.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirm mr-auto-ns center pl2 '>Unconscious Incompetence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1 mr-auto tc tl-ns'>You don’t know what you don’t know</p>
+      <h3 class='bold mt3 f-avenirm mr-auto-ns center'>Unconscious Incompetence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You <strong>don’t know</strong> what you <strong>don’t know</strong></p>
     </div>
 
     <div class='flex flex-column items-center justify-center flex-item--same-width'>
@@ -74,8 +74,8 @@
         <%= render LearnElixirLandingWeb.IconView, "semi_human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirm mr-auto-ns center pl2'>Conscious Incompetence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You know what you don’t know. You can see your shortcomings and understand where you need to improve</p>
+      <h3 class='bold mt3 f-avenirm mr-auto-ns center'>Conscious Incompetence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You <strong>know</strong> what you <strong>don’t know</strong>. You can see your shortcomings and understand where you need to improve</p>
     </div>
 
     <div class='flex flex-column items-center justify-center flex-item--same-width'>
@@ -83,8 +83,8 @@
         <%= render LearnElixirLandingWeb.IconView, "human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirm mr-auto-ns center pl2'>Conscious Competence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You know what you know. You are starting to get the hang of things but it still takes  effort and concentration</p>
+      <h3 class='bold mt3 f-avenirm mr-auto-ns center'>Conscious Competence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You <strong>know</strong> what you <strong>know</strong>. You are starting to get the hang of things but it still takes  effort and concentration</p>
     </div>
 
     <div class='flex flex-column items-center justify-center flex-item--same-width'>
@@ -92,18 +92,18 @@
         <%= render LearnElixirLandingWeb.IconView, "computer_human.html", conn: @conn %>
       </div>
 
-      <h4 class='bold mt3 f-avenirm mr-auto-ns center pl2'>Unconscious Competence</h3>
-      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You don’t know what you know  You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot</p>
+      <h3 class='bold mt3 f-avenirm mr-auto-ns center'>Unconscious Competence</h3>
+      <p class='methodology-evolution-text mt2 ph2 fw1 tc tl-ns'>You don’t <strong>know</strong> what you <strong>know</strong>. You’ve min/maxed every stat and can only improve your technique; you’re excellent on autopilot</p>
     </div>
   </div>
 </section>
 
-<section class='mt5 pt5 purple f-avenirm lh-copy'>
+<section class='mt5 pt5 purple f-avenirm lh-copy methodology-gains-section'>
   <div class='tc'>
     <h2 class='f-avenirb'>Knowledge</h2>
-    <p class='db center mt4 tc ph4 ph0-ns'>
-      <span class='db-ns'>Theory, information, and facts are the cognitive resources or</span>
-      <span class='db-ns'>building blocks towards the practical understanding of a subject</span>
+    <p class='db center mt4 tc ph4 ph0-ns spaced-text-block'>
+      <span>Theory, information, and facts are the cognitive resources or</span>
+      <span>building blocks towards the practical understanding of a subject</span>
     </p>
   </div>
 
@@ -118,10 +118,10 @@
 
     <div class='mr-auto methodology-gains-item methodology-consolidated-resources'>
       <h3 class='f-avenirb'>Consolidated Resources</h3>
-      <p class='mt3'>
-        <span class='db'>See the big picture from day one rather</span>
-        <span class='db'>than searching each topic one by one</span>
-        <span class='db'>and piecing it together over the years</span>
+      <p class='mt3 spaced-text-block'>
+        <span>See the big picture from day one rather</span>
+        <span>than searching each topic one by one</span>
+        <span>and piecing it together over the years</span>
       </p>
     </div>
 
@@ -131,11 +131,11 @@
 
     <div class='ml-auto methodology-gains-item'>
       <h3 class='f-avenirb methodology-one-hundred-percent'>100%</h3>
-      <p class='mt3'>
-        <span class='db'>Course material covers all the</span>
-        <span class='db'>fundamental paradigms and</span>
-        <span class='db'>philosophies you need to be</span>
-        <span class='db'>a talented Elixir developer</span>
+      <p class='mt3 spaced-text-block'>
+        <span>Course material covers all the</span>
+        <span>fundamental paradigms and</span>
+        <span>philosophies you need to be</span>
+        <span>a talented Elixir developer</span>
       </p>
     </div>
 
@@ -145,12 +145,12 @@
 
     <div class='mr-auto methodology-gains-item methodology-self-paced'>
       <h3 class='f-avenirb'>Self Paced</h3>
-      <p class='mt3'>
-        <span class='db'>Watch videos or read the transcripts</span>
-        <span class='db'>as quickly or slowly as your schedule</span>
-        <span class='db'>allows. Strategically compound your</span>
-        <span class='db'>capabilities with each week of content</span>
-        <span class='db'>building off the last</span>
+      <p class='mt3 spaced-text-block'>
+        <span>Watch videos or read the transcripts</span>
+        <span>as quickly or slowly as your schedule</span>
+        <span>allows. Strategically compound your</span>
+        <span>capabilities with each week of content</span>
+        <span>building off the last</span>
       </p>
     </div>
 
@@ -160,12 +160,12 @@
   </div>
 </section>
 
-<section class='mt5 pt5 purple f-avenirm lh-copy'>
+<section class='mt5 pt5 purple f-avenirm lh-copy methodology-gains-section'>
   <div class='tc'>
     <h2 class='f-avenirb'>Wisdom</h2>
-    <p class='center mt4 ph4 ph0-ns'>
-      <span class='db-ns'>Only take advice from people who have the knowledge you want</span>
-      <span class='db-nw'>and you’ll learn sooner than you’d expect</span>
+    <p class='center mt4 ph4 ph0-ns spaced-text-block'>
+      <span>Only take advice from people who have the knowledge you want</span>
+      <span>and you’ll learn sooner than you’d expect</span>
     </p>
   </div>
 
@@ -181,12 +181,12 @@
     <div class='mr-auto methodology-gains-item methodology-live-programming'>
       <h3 class='f-avenirb'>Live Programming</h3>
 
-      <p class='mt3'>
-        <span class='db'>Join our weekly Q&A calls to deep</span>
-        <span class='db'>dive into complex concepts and see</span>
-        <span class='db'>how experienced Elixir developers</span>
-        <span class='db'>would understand or solve your</span>
-        <span class='db'>particular situation</span>
+      <p class='mt3 spaced-text-block'>
+        <span>Join our weekly Q&A calls to deep</span>
+        <span>dive into complex concepts and see</span>
+        <span>how experienced Elixir developers</span>
+        <span>would understand or solve your</span>
+        <span>particular situation</span>
       </p>
     </div>
 
@@ -196,11 +196,11 @@
 
     <div class='ml-auto methodology-gains-item methodology-industry-experience'>
       <h3 class='f-avenirb'>Industry Experience</h3>
-      <p class='mt3'>
-        <span class='db'>Soft skills, hard skills, where to look? who to talk</span>
-        <span class='db'>to? what to ask for?</span>
-        <span class='db'>Learn how to stand out as the obvious</span>
-        <span class='db'>candidate while raising your standard of living</span>
+      <p class='mt3 spaced-text-block'>
+        <span>Soft skills, hard skills, where to look? who to talk</span>
+        <span>to? what to ask for?</span>
+        <span>Learn how to stand out as the obvious</span>
+        <span>candidate while raising your standard of living</span>
       </p>
     </div>
 
@@ -210,10 +210,10 @@
 
     <div class='mr-auto methodology-gains-item methodology-quick-clarification'>
       <h3 class='f-avenirb'>Quick Clarification</h3>
-      <p class='mt3'>
-        <span class='db'>Message mentors on Slack </span>
-        <span class='db'>if you’re stuck at a module or</span>
-        <span class='db'>facing the unknown at work</span>
+      <p class='mt3 spaced-text-block'>
+        <span>Message mentors on Slack </span>
+        <span>if you’re stuck at a module or</span>
+        <span>facing the unknown at work</span>
       </p>
     </div>
 
@@ -223,10 +223,10 @@
 
     <div class='ml-auto methodology-gains-item methodology-speed-run'>
       <h3 class='f-avenirb'>Speed Run</h3>
-      <p class='mt3'>
-        <span class='db'>Save years of trial and error and prevent the</span>
-        <span class='db'>pitfalls of bad programming habits that plague</span>
-        <span class='db'>self-taught junior Elixir developers</span>
+      <p class='mt3 spaced-text-block'>
+        <span>Save years of trial and error and prevent the</span>
+        <span>pitfalls of bad programming habits that plague</span>
+        <span>self-taught junior Elixir developers</span>
       </p>
     </div>
   </div>
@@ -236,13 +236,13 @@
   </div>
 </section>
 
-<section class='mt5 pt5 purple f-avenirm lh-copy'>
+<section class='mt5 pt5 purple f-avenirm lh-copy methodology-gains-section'>
   <div>
     <h2 class='f-avenirb tc'>Experience</h2>
-    <p class='mt4 mxn tc ph4 ph0-ns'>
-      <span class='db-ns'>Push past previous plateaus - combine the knowledge you’ve acquired</span>
-      <span class='db-ns'>and the wisdom you’ve gleaned to form your unique perspective and</span>
-      <span class='db-ns'>engrave it into the industry</span>
+    <p class='mt4 mxn tc ph4 ph0-ns spaced-text-block'>
+      <span>Push past previous plateaus - combine the knowledge you’ve acquired</span>
+      <span>and the wisdom you’ve gleaned to form your unique perspective and</span>
+      <span>engrave it into the industry</span>
     </p>
   </div>
 
@@ -257,10 +257,10 @@
 
     <div class='mr-auto methodology-gains-item methodology-practical-application'>
       <h3 class='f-avenirb'>Practical Application</h3>
-      <p>
-        <span class='db'>Test your comprehension with quizzes</span>
-        <span class='db'>and projects each step of the way to</span>
-        <span class='db'>validate your growth as a developer</span>
+      <p class='spaced-text-block'>
+        <span>Test your comprehension with quizzes</span>
+        <span>and projects each step of the way to</span>
+        <span>validate your growth as a developer</span>
       </p>
     </div>
 
@@ -269,11 +269,11 @@
     </div>
 
     <div class='ml-auto methodology-gains-item methodology-proof-of-work'>
-      <h3 class='f-avenirb'>Proof of Work</h3>
+      <h3 class='f-avenirb spaced-text-block'>Proof of Work</h3>
       <p>
-        <span class='db'>Add mid-term and final projects as</span>
-        <span class='db'>examples of your excellent code to GitHub</span>
-        <span class='db'>for hiring managers to admire</span>
+        <span>Add mid-term and final projects as</span>
+        <span>examples of your excellent code to GitHub</span>
+        <span>for hiring managers to admire</span>
       </p>
     </div>
 
@@ -282,12 +282,12 @@
     </div>
 
     <div class='mr-auto methodology-gains-item methodology-fam'>
-      <h3 class='f-avenirb'>Learn Elixir Fam</h3>
+      <h3 class='f-avenirb spaced-text-block'>Learn Elixir Fam</h3>
       <p>
-        <span class='db'>Recommendations, referrals, and</span>
-        <span class='db'>introductions. Have an interview</span>
-        <span class='db'>with our Hiring Partners before the</span>
-        <span class='db'>opportunity hits the job boards</span>
+        <span>Recommendations, referrals, and</span>
+        <span>introductions. Have an interview</span>
+        <span>with our Hiring Partners before the</span>
+        <span>opportunity hits the job boards</span>
       </p>
     </div>
 
@@ -296,13 +296,13 @@
     </div>
 
     <div class='ml-auto methodology-gains-item methodology-sandbox'>
-      <h3 class='f-avenirb'>Sandbox</h3>
+      <h3 class='f-avenirb spaced-text-block'>Sandbox</h3>
       <p>
-        <span class='db'>Startups, scale enterprises, improve the</span>
-        <span class='db'>blockchain, teach an AI, popularize</span>
-        <span class='db'>LiveView, become a mentor, travel and work</span>
-        <span class='db'>remotely for your favorite eSports company.</span>
-        <span class='db'>You choose your own adventure!</span>
+        <span>Startups, scale enterprises, improve the</span>
+        <span>blockchain, teach an AI, popularize</span>
+        <span>LiveView, become a mentor, travel and work</span>
+        <span>remotely for your favorite eSports company.</span>
+        <span>You choose your own adventure!</span>
       </p>
     </div>
 
@@ -319,7 +319,7 @@
 
 <section class='mt5 ph3 vh-75 flex flex-column justify-center items-center bg-light-purple white f-avenirl bottom-purple-box methodology-bottom-box'>
   <h2 class='tc lh-title f-domine'>We only want to work with people we know we can help</h2>
-  <p class='lh-copy mxn tc mt4'>
+  <p class='lh-copy mxn tc mt4 spaced-text-block'>
     <span>Book a call now with Jeremy Graham to see if we’re a good fit for each other.</span>
     <span>Once we get to know you and know we can help you get to your goal, pricing options will be</span>
     <span>presented to you and we can discuss the best steps moving forward.</span>
